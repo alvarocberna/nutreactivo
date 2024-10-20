@@ -41,6 +41,20 @@
     height: 550px;
 }
 
+.boxMedSty {
+    background-color: #8C85FF;
+}
+
+.btnMedSty {
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .valoresSty {
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 782px) {
     .valoresSty {
         width: 100%;
@@ -57,7 +71,17 @@
     .imgPortSty {
         height: 350px;
     }
+
+    .boxMedSty {
+        background-color: #ffffff;
+    }
+
+    .btnMedSty {
+        color: #673DE6;
+    }
+
 }
+
 
 @media only screen and (max-width: 600px) {
     .imgPortSty {

@@ -11,7 +11,7 @@ import "../app/globals.css";
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg w-100 d-flex flex-column py-0 px-0"
-            style={{ position: 'fixed', top: '0px', borderBottom: '1px solid #EFEFEF' }}>
+            style={{ position: 'fixed', top: '0px', borderBottom: '1px solid #EFEFEF', zIndex: '1' }}>
 
             <div className='container-fluid w-100 d-flex justify-content-center' style={{ height: '25px', background: '#02B090' }}>
                 <div className='row w-100 h-100'>
