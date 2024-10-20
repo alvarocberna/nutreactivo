@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteLeft, faCheck, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import ImgNutri from '../media/img_alvaro_canete_nutricionista.jpg'
 import ImgInf1 from '../media/img_informe1.jpg'
 import ImgInf2 from '../media/img_informe2.jpg'
@@ -14,16 +14,37 @@ import ImgConsalud from '../media/img_isapre_consalud.png'
 import ImgCruzBlanca from '../media/img_isapre_cruz_blanca.png'
 import ImgNuevaMasVida from '../media/img_isapre_nueva_mas_vida.png'
 import ImgVidaTres from '../media/img_isapre_vida_tres.png'
+import ImgPortada from '../media/img_portada.png'
 import ImgFondo from '../media/img_fondo.png'
 
 function Portada() {
   return (
-    <div className="container-fluid d-flex d-column d-lg-row justify-content-center align-items-center mb-5"
-      style={{ height: '600px', marginTop: '120px' }}>
-      <div className="col-11 col-sm-8 col-md-10 col-lg-5">
-        <h1 className="h1" style={{ color: '#2F1C6A' }}>Nutrición para el <br /> deporte y salud</h1>
-      </div>
-      <div className="col-11 col-sm-8 col-md-10 col-lg-5 border" style={{ height: '300px', background: 'gray' }}>
+    <div className="container-fluid" style={{ marginTop: '150px', marginBottom: '150px' }}>
+      <div className=" m-auto col-11 col-sm-10 col-md-11 col-lg-11 col-xl-10 d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div className="m-auto col-11 col-sm-12 col-md-4 col-lg-4 ">
+          <h1 className="h1 mb-4 fw-bold" style={{ color: '#2F1C6A' }}>Nutrición para el deporte y salud</h1>
+          <div className="d-flex align-items-center mb-2">
+            <FontAwesomeIcon icon={faCheck} className="me-2" style={{ width: '18px', fontSize: '18px', color: '#02B090' }} />
+            <p className="mb-0">Alimentación personalizada</p>
+          </div>
+          <div className="d-flex align-items-center mb-2">
+            <FontAwesomeIcon icon={faCheck} className="me-2" style={{ width: '18px', fontSize: '18px', color: '#02B090' }} />
+            <p className="mb-0">Suplementación deportiva</p>
+          </div>
+          <div className="d-flex align-items-center mb-2">
+            <FontAwesomeIcon icon={faCheck} className="me-2" style={{ width: '18px', fontSize: '18px', color: '#02B090' }} />
+            <p className="mb-0">Estrategias nutricionales</p>
+          </div>
+          <div className="d-flex align-items-center mb-2">
+            <FontAwesomeIcon icon={faCheck} className="me-2" style={{ width: '18px', fontSize: '18px', color: '#02B090' }} />
+            <p className="mb-0">Informe físico completo</p>
+          </div>
+          <div className="d-flex align-items-center mb-2">
+            <FontAwesomeIcon icon={faLocationDot} className="me-2" style={{ width: '18px', fontSize: '18px', color: '#02B090' }} />
+            <p className="mb-0">Atenciones en Viña del Mar y Online</p>
+          </div>
+        </div>
+        <Image src={ImgPortada} className="m-auto col-11 col-sm-12 col-md-7 col-lg-7 imgPortSty" style={{ objectFit: 'contain' }}></Image>
       </div>
     </div>
   )

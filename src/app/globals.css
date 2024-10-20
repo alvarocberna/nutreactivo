@@ -37,6 +37,10 @@
     transition: 0.3s;
 }
 
+.imgPortSty {
+    height: 550px;
+}
+
 @media only screen and (max-width: 782px) {
     .valoresSty {
         width: 100%;
@@ -48,5 +52,15 @@
         color: black;
         border-radius: 0px;
         width: 100%;
+    }
+
+    .imgPortSty {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .imgPortSty {
+        height: 250px;
     }
 }
