@@ -1,0 +1,17 @@
+.btnAgeSty {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8C85FF;
+    border-radius: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+    color: #673DE6;
+}
+
+.btnAgeSty:hover {
+    background-color: #F0EFFF;
+    transition: 0.4s;
+    cursor: pointer;
+}

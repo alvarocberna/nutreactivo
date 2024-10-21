@@ -44,28 +44,29 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav" style={{ background: 'white' }} >
                     <ul className="navbar-nav w-100 d-flex justify-content-end">
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
-                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold " href="/">
+                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold "
+                                href="/servicios/consulta-nutricional">
                                 Consulta nutricional
                             </Link>
                         </li>
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
-                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold " href="/">
+                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold " href="/#valores">
                                 Valores
                             </Link>
                         </li>
                         <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
-                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/">
+                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/antropometria">
                                 Mediciones
                             </Link>
                         </li>
-                        <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
+                        {/* <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
                             <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/">
                                 Artículos
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item col-12 col-lg-2 d-flex align-items-center " style={{ height: '60px' }}>
                             <Link className="d-flex align-items-center justify-content-center fw-semibold btnAgendarSty"
-                                aria-current="page" href="/">
+                                aria-current="page" href="/agendar">
                                 Agenda aquí
                             </Link>
                         </li>

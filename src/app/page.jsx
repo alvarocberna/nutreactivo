@@ -19,7 +19,7 @@ import ImgFondo from '../media/img_fondo.png'
 
 function Portada() {
   return (
-    <div className="container-fluid" style={{ marginTop: '150px', marginBottom: '150px' }}>
+    <div className="container-fluid" style={{ marginBottom: '150px' }}>
       <div className=" m-auto col-11 col-sm-10 col-md-11 col-lg-11 col-xl-10 d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="m-auto col-12 col-sm-12 col-md-4 col-lg-4 ">
           <h1 className="h1 mb-4 fw-bold" style={{ color: '#2F1C6A' }}>Nutrición para el deporte y salud</h1>
@@ -54,12 +54,12 @@ function Consulta() {
   return (
     <div className="col-12 d-flex" style={{ marginBottom: '100px' }}>
       <div className="d-flex flex-column-reverse flex-md-row m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-9">
-        <iframe height="400px" width="300px" style={{ borderRadius: '15px' }} className='m-auto me-lg-5'
+        <iframe height="400px" width="300px" style={{ borderRadius: '15px' }} className='m-auto me-lg-5 mt-3'
           src="https://youtube.com/embed/3m74gRagBaQ">
         </iframe>
         {/* <Image className="me-5" src={ImgNutri} style={{ height: '400px', width: '300px', objectFit: 'cover', borderRadius: '15px' }}
           alt="Nutricionista Alvaro Cañete"></Image> */}
-        <div className="m-auto col-12 col-sm-10 col-md-6 col-lg-8 d-flex flex-column justify-content-center  mb-3">
+        <div className="m-auto col-12 col-sm-10 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
           <FontAwesomeIcon icon={faQuoteLeft} style={{ fontSize: '40px', width: '50px', color: '#673DE6' }} />
           <p className="h2" style={{ textAlign: 'justify', color: '#2F1C6A' }}>
             Las necesidades de cada usuario son  diferentes, según su disciplina y <span style={{ color: '#673DE6' }}>objetivos</span>.
@@ -114,7 +114,7 @@ function Mediciones() {
             donde podrás conocer tu composición corporal (masa muscular y grasa), imc, somatotipo,
             phantom, pliegues y perímetros, entre otros indicadores de uso deportivo.
           </p>
-          <Link href='/' className='btn col-12 col-md-8 col-lg-6 text-white fw-semibold' style={{ background: '#673DE6' }}>
+          <Link href='/antropometria/evaluacion-fisica' className='btn col-12 col-md-8 col-lg-6 text-white fw-semibold' style={{ background: '#673DE6' }}>
             Ver información completa
           </Link>
         </div>
@@ -125,7 +125,7 @@ function Mediciones() {
 
 function Valores() {
   return (
-    <div className=" d-flex flex-column " style={{ marginBottom: '100px' }}>
+    <div className=" d-flex flex-column " style={{ marginBottom: '100px' }} id="valores">
       <h2 className="m-auto col-10 col-sm-8 col-md-10 col-lg-9 col-xl-10 text-center mb-5 " style={{ color: '#2F1C6A' }}>Valores</h2>
       <div className="m-auto d-flex flex-column flex-lg-row col-10 col-sm-8 col-md-10 col-lg-11 col-xl-10 ">
         <div className="d-flex flex-column flex-md-row col-12 col-lg-6 justify-content-around ">
@@ -149,7 +149,7 @@ function Valores() {
                 Valor: 30.000 clp.
               </p>
             </div>
-            <Link href='/' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
+            <Link href='/agendar' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
               Agendar
             </Link>
           </div>
@@ -174,7 +174,7 @@ function Valores() {
                 Valor: 55.000 clp.
               </p>
             </div>
-            <Link href='/' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
+            <Link href='/agendar' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
               Agendar
             </Link>
           </div>
@@ -201,7 +201,7 @@ function Valores() {
                 Valor: 80.000 clp.
               </p>
             </div>
-            <Link href='/' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
+            <Link href='/agendar' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
               Agendar
             </Link>
           </div>
@@ -225,7 +225,7 @@ function Valores() {
                 Valor: 20.000 clp.
               </p>
             </div>
-            <Link href='/' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
+            <Link href='/agendar' className="btn text-white col-12" style={{ background: '#673DE6', color: '#2F1C6A' }}>
               Agendar
             </Link>
           </div>
@@ -243,22 +243,26 @@ function Objetivos() {
         Principales objetivos
       </h2>
       <div className="row m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-10 d-flex justify-content-between">
-        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty" href='/'>
-          <p className="mb-0 h5 text-center border" style={{ color: '#673DE6' }}>
+        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty"
+          href='/objetivos/rendimiento'>
+          <p className="mb-0 h5 text-center" style={{ color: '#673DE6' }}>
             Mejora de rendimiento deportivo
           </p>
         </Link>
-        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty" href='/'>
+        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty"
+          href='/objetivos/masa-muscular'>
           <p className="mb-0 h5 text-center" style={{ color: '#673DE6' }}>
             Ganancia de masa muscular
           </p>
         </Link>
-        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty" href='/'>
+        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty"
+          href='/objetivos/definicion'>
           <p className="mb-0 h5 text-center" style={{ color: '#673DE6' }}>
             Disminución de porcentaje de grasa
           </p>
         </Link>
-        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty" href='/'>
+        <Link className="col-12 col-md-5 col-lg-2 px-2 d-flex align-items-center justify-content-center rounded mb-3 objSty"
+          href='/objetivos/como-definir-objetivos'>
           <p className="mb-0 h5 text-center" style={{ color: '#673DE6' }}>
             No sé mis objetivos ¿Cómo identificarlos?
           </p>
@@ -299,3 +303,5 @@ export default function Home() {
     </>
   );
 }
+
+export { Valores };
