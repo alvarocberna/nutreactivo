@@ -12,14 +12,17 @@
 
 .objSty {
     border: 1px solid #673DE6;
+    color: #673DE6;
     height: 200px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
+    border-radius: 15px;
 }
 
 .objSty:hover {
-    background-color: #D7C9FF;
-    transition: 0.3s;
+    background-color: #673DE6;
+    color: white;
+    transition: 0.5s;
 }
 
 .btnAgendarSty {

@@ -59,11 +59,11 @@ export default function Navbar() {
                                 Mediciones
                             </Link>
                         </li>
-                        {/* <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
-                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/">
-                                Artículos
+                        <li className="nav-item  col-12 col-lg-2" style={{ height: '60px' }}>
+                            <Link className="nav-link h-100 d-flex align-items-center justify-content-center fw-semibold" href="/recursos">
+                                Recursos
                             </Link>
-                        </li> */}
+                        </li>
                         <li className="nav-item col-12 col-lg-2 d-flex align-items-center " style={{ height: '60px' }}>
                             <Link className="d-flex align-items-center justify-content-center fw-semibold btnAgendarSty"
                                 aria-current="page" href="/agendar">

@@ -1,0 +1,14 @@
+.boxRec {
+    transition: 0.4s;
+    text-decoration: none;
+    background-color: white;
+    color: #2F1C6A;
+    border: 1px solid #8C85FF;
+    border-radius: 15px;
+}
+
+.boxRec:hover {
+    background-color: #F4F5FF;
+    transition: 0.4s;
+    cursor: pointer;
+}
