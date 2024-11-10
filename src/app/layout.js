@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Nutreactivo - Nutrición deportiva Viña del Mar",
-  description: "Nutricionistas deportivos especialistas en rendimiento y salud. Atencion nutricional en Viña del Mar y Online",
+  description: "Nutricionista deportivo especializado en ejercicio, rendimiento y salud. Atenciones en Viña del Mar, Valparaíso y Online.",
 };
 
 export default function RootLayout({ children }) {

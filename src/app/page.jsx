@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
@@ -44,7 +43,7 @@ function Portada() {
           </div>
         </div>
         <Image src={ImgPortada} className="m-auto col-12 col-sm-12 col-md-7 col-lg-7 imgPortSty"
-          alt="Portada Nutreactivo Nutricion Deportiva" style={{ objectFit: 'contain' }}></Image>
+          alt="Portada Nutreactivo Nutricion Deportiva - Que tu alimentación guíe tu objetivo" style={{ objectFit: 'contain' }}></Image>
       </div>
     </div>
   )
@@ -55,7 +54,7 @@ function Consulta() {
     <div className="col-12 d-flex" style={{ marginBottom: '100px' }}>
       <div className="d-flex flex-column-reverse flex-md-row m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-9">
         <iframe height="400px" width="300px" style={{ borderRadius: '15px' }} className='m-auto me-lg-5 mt-3'
-          src="https://youtube.com/embed/3m74gRagBaQ" alt='Video Consulta Nutricional Nutricionista Álvaro Cañete'>
+          src="https://youtube.com/embed/3m74gRagBaQ" alt='Video Consulta Nutricional Nutricionista deportivo Álvaro Cañete'>
         </iframe>
         <div className="m-auto col-12 col-sm-10 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
           <FontAwesomeIcon icon={faQuoteLeft} className="text-primary" style={{ fontSize: '40px', width: '50px' }} />

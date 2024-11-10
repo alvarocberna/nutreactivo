@@ -11,7 +11,7 @@ export default function Nutricionistas() {
             <div className='m-auto col-10 col-sm-9 col-md-10 col-lg-11 col-xl-9'>
                 <h3 className='h2 text-tertiary mb-5'>Nutricionista Álvaro Cañete Berna</h3>
                 <div className='d-flex flex-column flex-md-row justify-content-between align-items-center'>
-                    <Image src={ImgNutri} alt='Nutricionista Álvaro Cañete Berna' height={400} width={300}
+                    <Image src={ImgNutri} alt='Nutricionista deportivo Álvaro Cañete Berna' height={400} width={300}
                         className='mb-3 mb-md-0' style={{ borderRadius: '15px' }} />
                     <div className='col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center'>
                         <FontAwesomeIcon icon={faQuoteLeft} style={{ fontSize: '40px', width: '40px', color: '#673DE6' }}

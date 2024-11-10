@@ -18,7 +18,7 @@ function Indicador(props) {
                 <h2 className="accordion-header h4 text-tertiary text-center" style={{ height: '60px' }}>
                     {titulo}
                 </h2>
-                <Image src={img} alt='...' height={250} width={250} className='m-auto' />
+                <Image src={img} alt='Indicador deportivo evaluación nutricional' height={250} width={250} className='m-auto' />
                 <button className="col-10 px-3 py-1 bg-secondary text-white m-auto rounded" style={{ border: 'none' }} type="button" data-bs-toggle="collapse" data-bs-target={targetInd} aria-expanded="false" aria-controls={idInd}>
                     Ver detalles
                 </button>
