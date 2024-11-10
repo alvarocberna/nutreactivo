@@ -1,4 +1,4 @@
-'use client'
+
 import './style.css';
 
 export default function MasaMuscular() {
