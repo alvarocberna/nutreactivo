@@ -1,3 +1,4 @@
+'use client'
 
 import Link from 'next/link';
 import './style.css'
@@ -14,10 +15,9 @@ export default function Antropometria() {
                     <p className="h4 fw-bold mb-3 text-center" style={{ color: '#673DE6' }}>Evaluación física</p>
                     <p className='h6' style={{ color: '#673DE6' }}>(Incluida en consulta nutricional)</p>
                 </Link>
-                <div className="col-12 col-md-5 boxAntSty d-flex flex-column mb-3">
+                <Link className="col-12 col-md-5 boxAntSty d-flex flex-column mb-3" href='/antropometria/calculo-de-indicadores'>
                     <p className='mb-3 h4 fw-bold text-center' style={{ color: '#673DE6' }}>Cálculo de indicadores deportivos</p>
-                    <p className='h6' style={{ color: '#673DE6' }}>(Próximamente)</p>
-                </div>
+                </Link>
             </div>
         </div>
     );

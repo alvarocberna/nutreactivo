@@ -1,0 +1,123 @@
+import ImgComponentesPorc from '../../../media/img_componentes_porcentaje.png';
+import ImgComponentesKg from '../../../media/img_componentes_kg.png';
+import ImgSomatotipo from '../../../media/img_somatocarta.png';
+import ImgPhantom from '../../../media/img_phantom.png';
+import ImgIMC from '../../../media/img_imc.png';
+import ImgFFMI from '../../../media/img_ffmi.png';
+import ImgPliegues from '../../../media/img_pliegues.png';
+import ImgPerimetros from '../../../media/img_perimetros.png';
+import ImgSumatorias from '../../../media/img_sumatorias.png';
+import ImgIndiceCormico from '../../../media/img_indice_cormico.png';
+import ImgIndiceEsquelico from '../../../media/img_indice_esquelico.png';
+import ImgEnvergadura from '../../../media/img_envergadura.png';
+
+export const InfoIndicadores = {
+    componentesPorc: {
+        titulo: "Componentes corporales (%)",
+        img: ImgComponentesPorc,
+        cuerpo: "Estimación del porcentaje de masa muscular y grasa corporal del usuario.",
+        idInd: "indicador1",
+        targetInd: "#indicador1",
+        idBox: 'box1',
+        targetBox: '#box1',
+    },
+    componentesKg: {
+        titulo: "Componentes corporales (kg)",
+        img: ImgComponentesKg,
+        cuerpo: "Estimación del nivel absoluto (kg) de masa muscular y grasa corporal del usuario.",
+        idInd: "indicador2",
+        targetInd: "#indicador2",
+        idBox: 'box2',
+        targetBox: '#box2',
+    },
+    somatocarta: {
+        titulo: "Somatocarta",
+        img: ImgSomatotipo,
+        cuerpo: "En la somatocarta podemos graficar el somatotipo del usuario, el cual se determina en base a la muscularidad, adiposidad y linealidad del deportista. Este indicador permite visualizar los cambios del deportista a través del tiempo, así como compararlo con otros atletas de disciplinas afines de mayor nivel.",
+        idInd: "indicador3",
+        targetInd: "#indicador3",
+        idBox: 'box3',
+        targetBox: '#box3',
+    },
+    phantom: {
+        titulo: "Phantom",
+        img: ImgPhantom,
+        cuerpo: "Indicador que evalúa la proporcionalidad y armonía corporal del usuario. Este modelo cuantifica cada medición en base a la propia proporcionalidad del deportista, permitiendo visualizar el grado de desarrollo de zonas del cuerpo como perímetros de brazo, pierna, entre otros, de forma objetiva. Este modelo es muy útil en disciplinas donde predomina la estética y se busca cierto nivel de armonía corporal.",
+        idInd: "indicador4",
+        targetInd: "#indicador4",
+        idBox: 'box4',
+        targetBox: '#box4',
+    },
+    imc: {
+        titulo: "Índice de Masa Corporal",
+        img: ImgIMC,
+        cuerpo: "Indicador de proporcionalidad corporal, comúnmente utilizado para determinar el estado nutricional del usuario. Sin embargo, por su poca sensibilidad, puede inducir al error en personas con altos niveles de grasa corporal.",
+        idInd: "indicador5",
+        targetInd: "#indicador5",
+        idBox: 'box5',
+        targetBox: '#box5',
+    },
+    ffmi: {
+        titulo: "Índice de Masa Magra",
+        img: ImgFFMI,
+        cuerpo: "Indicador que estima la masa magra del usuario. De gran utilidad para evaluar el nivel de masa muscular del individuo, así como estimar el límite de desarrollo muscular natural del deportista.",
+        idInd: "indicador6",
+        targetInd: "#indicador6",
+        idBox: 'box6',
+        targetBox: '#box6',
+    },
+    pliegues: {
+        titulo: "Pliegues Cutaneos",
+        img: ImgPliegues,
+        cuerpo: "Indicador correspondiente a los pliegues cutáneos obtenidos en la evaluación física. Los pliegues nos entregan una visión del de grasa corporal del usuario. Además, nos permiten estimar el nivel de grasa corporal.",
+        idInd: "indicador7",
+        targetInd: "#indicador7",
+        idBox: 'box7',
+        targetBox: '#box7',
+    },
+    perimetros: {
+        titulo: "Perímetros Corporales",
+        img: ImgPerimetros,
+        cuerpo: "Correspondientes a brazo, antebrazo, tórax, cintura, cadera, muslo y pierna. Los perímetros corporales por sí solos entregan una visión del desarrollo muscular del deportista, la cual puede ser sensibilizada con indicadores como el modelo phantom, que cuantifica estos indicadores en base a la proporcionalidad del usuario.",
+        idInd: "indicador8",
+        targetInd: "#indicador8",
+        idBox: 'box8',
+        targetBox: '#box8',
+    },
+    sumatorias: {
+        titulo: "Sumatoria de 4, 6 y 8 pliegues",
+        img: ImgSumatorias,
+        cuerpo: "Las sumatorias de pliegues son indicadores comúnmente utilizados en el ámbito deportivo para evaluar el nivel de grasa corporal del deportista. La ventaja de este indicador es su objetividad y rapidez, en comparación con otros indicadores doblemente indirectos como el porcentaje de grasa corporal.",
+        idInd: "indicador9",
+        targetInd: "#indicador9",
+        idBox: 'box9',
+        targetBox: '#box9',
+    },
+    indiceCormico: {
+        titulo: "Índice Córmico",
+        img: ImgIndiceCormico,
+        cuerpo: "Expresa la relación proporcional entre la longitud del tronco y el resto del cuerpo. Puede ser implementado en la búsqueda de características biomecánicas favorables para deportes como la Halterofilia o el Taekwondo, donde es más favorable un tronco proporcionalmente corto (braquicórmico).",
+        idInd: "indicador10",
+        targetInd: "#indicador10",
+        idBox: 'box10',
+        targetBox: '#box10',
+    },
+    indiceEsquelico: {
+        titulo: "Índice Esquélico",
+        img: ImgIndiceEsquelico,
+        cuerpo: "Expresa la relación proporcional entre la longitud del tren inferior del cuerpo con el tren superior. Puede ser implementado en la búsqueda de características biomecánicas favorables para deportes como la Halterofilia o el Taekwondo, donde es más favorable un tren inferior proporcionalmente largo (macroesquélico).",
+        idInd: "indicador11",
+        targetInd: "#indicador11",
+        idBox: 'box11',
+        targetBox: '#box11',
+    },
+    envergadura: {
+        titulo: "Envergadura Relativa",
+        img: ImgEnvergadura,
+        cuerpo: "Expresa la relación proporcional entre la envergadura de brazos y la estatura. Puede ser implementada en la búsqueda de características biomecánicas favorables para deportes como la natación, que se beneficia de una envergadura proporcionalmente superior, así como manos proporcionalmente grandes.",
+        idInd: "indicador12",
+        targetInd: "#indicador12",
+        idBox: 'box12',
+        targetBox: '#box12',
+    },
+}

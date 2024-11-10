@@ -96,14 +96,14 @@ function Recomendaciones({ set, state }) {
 
 function Grupo({ titulo, alimentos, alimentos2, alimentos3, img, cal, pro, cho, lip, cal2, pro2, cho2, lip2, cal3, pro3, cho3, lip3, subT, subT2, subT3, setGrupo, grupo }) {
     let ListaAlimentos = alimentos.map(porcion =>
-        <li className='col-12 col-md-5 mb-2 ms-3'>
+        <li className='col-12 col-md-5 mb-2 ms-3' key=''>
             {porcion}
         </li>
     )
     let ListaAlimentos2 = null;
     if (alimentos2) {
         ListaAlimentos2 = alimentos2.map(porcion =>
-            <li className='col-12 col-md-5 mb-2 ms-3'>
+            <li className='col-12 col-md-5 mb-2 ms-3' key=''>
                 {porcion}
             </li>
         )
@@ -111,7 +111,7 @@ function Grupo({ titulo, alimentos, alimentos2, alimentos3, img, cal, pro, cho, 
     let ListaAlimentos3 = null;
     if (alimentos3) {
         ListaAlimentos3 = alimentos3.map(porcion =>
-            <li className='col-12 col-md-5 mb-2 ms-3'>
+            <li className='col-12 col-md-5 mb-2 ms-3' key=''>
                 {porcion}
             </li>
         )
