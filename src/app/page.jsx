@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faCheck, faLocationDot, faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import CajaComentarios from "@/components/cajaComentarios";
 import ImgInf1 from '../media/img_informe1.jpg'
 import ImgInf2 from '../media/img_informe2.jpg'
 import ImgInf3 from '../media/img_informe3.jpg'
@@ -287,7 +288,6 @@ function Covertura() {
   )
 }
 
-
 export default function Home() {
   return (
     <>
@@ -297,6 +297,7 @@ export default function Home() {
       <Valores />
       <Objetivos />
       <Covertura />
+      {/* <CajaComentarios /> */}
     </>
   );
 }
