@@ -64,6 +64,7 @@ let numCajas = Array.from({ length: (numComentarios / 3) }, (_, i) => i + 1);
 
 
 function IterarComentarios({ numDeCaja, listaCom }) {
+    // Devuelve 3 comentarios de la lista de comentarios
     let indiceFinalListaCom = numDeCaja * 3;
     let indiceInicialListaCom = indiceFinalListaCom - 3;
     let comentariosMostrados = listaCom.slice(indiceInicialListaCom, indiceFinalListaCom).map((com, index) =>
@@ -74,7 +75,7 @@ function IterarComentarios({ numDeCaja, listaCom }) {
             <div className='px-3 py-3'>
                 <div className='d-flex mb-3'>
                     {Array.from({ length: com.calificacion }, (_, index) => (
-                        <FontAwesomeIcon key={index} icon={faStar} className='me-2 text-primary' />
+                        <FontAwesomeIcon key={index} icon={faStar} className='me-2 text-primary' style={{ height: '20px' }} />
                     ))}
                 </div>
                 <p>{com.comentario}</p>
@@ -90,16 +91,17 @@ function IterarComentarios({ numDeCaja, listaCom }) {
 
 
 export default function CajaComentarios() {
+    // almacena en cajasMostradas los elementos del carrusel en fn del total de comentarios dividido 3
     let cajasMostradas = [];
     numCajas.map(num => {
-        if (num === 1)
+        if (num === 1) {
             cajasMostradas.push(
                 <div key={num} className="carousel-item active">
                     <div className='d-flex'>
                         <IterarComentarios numDeCaja={num} listaCom={comentarios} />
                     </div>
                 </div>)
-        else
+        } else {
             cajasMostradas.push(
                 <div key={num} className="carousel-item">
                     <div className='d-flex'>
@@ -107,10 +109,11 @@ export default function CajaComentarios() {
                     </div>
                 </div>
             )
+        }
     }
     )
     return (
-        <div className='d-flex w-100'>
+        <div className='d-flex w-100' style={{ marginBottom: '100px' }}>
             <div className='d-flex flex-column m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-11'>
                 <h2 className='text-tertiary text-center mb-5'>Opiniones</h2>
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">

@@ -272,7 +272,7 @@ function Objetivos() {
 
 function Covertura() {
   return (
-    <div className="container-fluid d-flex flex-column" style={{ marginBottom: '100px' }}>
+    <div className="container-fluid d-flex flex-column" style={{ marginBottom: '0px' }}>
       <h2 className="m-auto col-11 col-sm-8 col-md-10 col-lg-9 col-xl-10 text-center mb-5 text-tertiary">
         Cobertura
       </h2>
@@ -288,6 +288,14 @@ function Covertura() {
   )
 }
 
+function Articulos() {
+  return (
+    <div className=" mb-0 mt-0">
+      <Link href='/articulos' className=" text-white">articulos</Link>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <>
@@ -296,8 +304,9 @@ export default function Home() {
       <Mediciones />
       <Valores />
       <Objetivos />
-      <Covertura />
       {/* <CajaComentarios /> */}
+      <Covertura />
+      <Articulos />
     </>
   );
 }
