@@ -58,8 +58,8 @@ export default function Articulo2() {
                         <p className='bg-quaternary rounded text-primary p-4 '>
                             Las sustancias prohibidas están definidas como tal debido a que representar
                             un riesgo para la salud, o violan el espíritu deportivo, el cual es definido por
-                            la WADA como  "la búsqueda por medios éticos de la excelencia humana a través del
-                            perfeccionamiento del talento natural de cada deportista".
+                            la WADA como  la búsqueda por medios éticos de la excelencia humana a través del
+                            perfeccionamiento del talento natural de cada deportista.
                         </p>
                         <p className=''>
                             El uso de sustancias y suplementos está regulado por organismos internacionales
