@@ -68,7 +68,7 @@ function IterarComentarios({ numDeCaja, listaCom }) {
     let indiceFinalListaCom = numDeCaja * 3;
     let indiceInicialListaCom = indiceFinalListaCom - 3;
     let comentariosMostrados = listaCom.slice(indiceInicialListaCom, indiceFinalListaCom).map((com, index) =>
-        <div key={index} className='col-3 mx-2 bg-white' style={{ border: '1px solid #D5DFFF', borderRadius: '15px' }}>
+        <div key={index} className='col-11 col-md-4 col-lg-3 mx-auto bg-white mb-3' style={{ border: '1px solid #D5DFFF', borderRadius: '15px' }}>
             <div className='bg-quaternary w-100 px-3 py-3' style={{ borderRadius: '15px 15px 0px 0px' }}>
                 <p className='mb-0  text-primary h5'>{com.nombre}</p>
             </div>
@@ -83,7 +83,7 @@ function IterarComentarios({ numDeCaja, listaCom }) {
         </div>
     )
     return (
-        <div className='col-12 d-flex justify-content-center'>
+        <div className='col-12 d-flex flex-column flex-md-row justify-content-center'>
             {comentariosMostrados}
         </div>
     )
