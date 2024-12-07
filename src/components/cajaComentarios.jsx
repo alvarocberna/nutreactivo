@@ -5,56 +5,56 @@ import { faStar } from '@fortawesome/free-regular-svg-icons'
 let comentarios = [
     {
         id: 1,
-        nombre: "Juan Perez 1",
-        comentario: "Me gustó mucho",
+        nombre: "César Abaroa",
+        comentario: "Excelente profesional !! 100% recomendado por su manera de trabajar, explica muy claramente las cosas y todo lo que necesitas saber para un cambio de hábitos.",
         calificacion: 5,
     },
     {
         id: 2,
-        nombre: "Nicolas Canete 2",
-        comentario: "Estoy ocupao",
+        nombre: "Javier Klenner",
+        comentario: "Gran experiencia. Me ayudó a entender como ordenar mi alimentación de forma muy clara. Los planes son personalizados y fáciles de entender. Siempre disponible para responder dudas y para ayudar en el proceso. Gracias a su apoyo profesional, y junto con el trabajo personal, pude bajar cerca de 8kg en 2 meses, aumentar mi masa muscular y mejorar mi rendimiento deportivo.",
         calificacion: 5,
     },
     {
         id: 3,
-        nombre: "Cesar 3",
-        comentario: "Me gustó mucho",
+        nombre: "Ariadna Martinez",
+        comentario: "Profesional muy comprometido, hace un excelente trabajo y seguimiento. He obtenido resultados muy satisfactorios, ademas es muy amable y te hace sentir muy cómodo.",
         calificacion: 5,
     },
     {
         id: 4,
-        nombre: "Daniel 4",
-        comentario: "Estoy ocupao",
+        nombre: "Andrea Vergara",
+        comentario: "¡Álvaro es un excelente nutricionista! Gracias a su profesionalismo y dedicación, logré no solo ponerme en forma, sino también recuperar mi salud y bienestar. Sus planes son personalizados, fáciles de seguir y están llenos de recomendaciones prácticas que realmente funcionan. Siempre está atento y dispuesto a resolver dudas, lo que hace que el proceso sea motivador y eficaz. ¡Lo recomiendo 100% a quienes buscan un cambio positivo en su vida!",
         calificacion: 5,
     },
     {
         id: 5,
-        nombre: "Jaime 5",
-        comentario: "Me gustó mucho",
+        nombre: "Roberto Apablaza",
+        comentario: "El mejor Nutricionista de todos, llegué a su consulta pesando 95kg y logré llegar a los 79 kg, dietas muy realistas, muy estructuradas. Creo que en toda medida Álvaro es y será tu mejor opción, yo le agradezco cada uno de mis cambios y sin ser esos nutricionistas que satanisan comidas.",
         calificacion: 5,
     },
     {
         id: 6,
-        nombre: "Luis 6",
-        comentario: "Estoy ocupao",
+        nombre: "Alihozca Muñoz",
+        comentario: "Bueno alvaro es un siete. Su conocimientos como nutricionista me ayudan a alcanzar mis metas de salud de manera efectiva y sostenible. Además, su empatía y paciencia me hacen tener la confianza de comunicarle cualquier duda que tenga. Totalmente recomendado para quienes buscan un cambio real y duradero en su bienestar.",
         calificacion: 5,
     },
     {
         id: 7,
-        nombre: "Gregorio 7",
-        comentario: "Estoy ocupao",
+        nombre: "Lukas Mundt",
+        comentario: "Muy buena experiencia, personalizada, realista y con resultados.",
         calificacion: 5,
     },
     {
         id: 8,
-        nombre: "Dante 8",
-        comentario: "Me gustó mucho",
+        nombre: "Sergio Lopez",
+        comentario: "Muy buena atención, especifica para los objetivos que uno quiere lograr. Ademas de la buena atención en la consulta, hay preocupación del avance luego de la cita.",
         calificacion: 5,
     },
     {
         id: 9,
-        nombre: "Rodrigo 9",
-        comentario: "Estoy ocupao",
+        nombre: "Cristobal Alfaro",
+        comentario: "Muy conforme con el trabajo de nutrición en el cual he progresado mucho. Recomendado!!",
         calificacion: 5,
     }
 ]
@@ -78,7 +78,7 @@ function IterarComentarios({ numDeCaja, listaCom }) {
                         <FontAwesomeIcon key={index} icon={faStar} className='me-2 text-primary' style={{ height: '20px' }} />
                     ))}
                 </div>
-                <p>{com.comentario}</p>
+                <p style={{ textAlign: 'justify', fontSize: '14px' }}>{com.comentario}</p>
             </div>
         </div>
     )

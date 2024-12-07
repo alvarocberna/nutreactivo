@@ -304,7 +304,7 @@ export default function Home() {
       <Mediciones />
       <Valores />
       <Objetivos />
-      {/* <CajaComentarios /> */}
+      <CajaComentarios />
       <Covertura />
       <Articulos />
     </>
