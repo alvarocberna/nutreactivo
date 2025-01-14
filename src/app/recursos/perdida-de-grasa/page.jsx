@@ -6,9 +6,9 @@ export default function PerdidaGrasa() {
         <div className='d-flex flex-column'>
             <div className='m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-8 d-flex flex-column'>
                 <h3 className='h2 text-tertiary mb-5'>
-                    3 aspectos clave en la pérdida de grasa corporal
+                    Recomendaciones nutricionales para optimizar la pérdida de grasa corporal
                 </h3>
-                <iframe src='https://youtube.com/embed/omaAywzSIGY' height={400}
+                <iframe src='https://youtube.com/embed/S88m8J_QO2c' height={400}
                     className='m-auto col-12 col-md-10 col-lg-8 rounded mb-5' alt='Video Perdida Grasa Corporal aspectos Clave' />
                 <p style={{ textAlign: 'justify' }}>
                     Si nuestro objetivo es la disminución de nuestro nivel de grasa corporal, entonces

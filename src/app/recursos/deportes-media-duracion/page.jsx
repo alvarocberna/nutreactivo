@@ -6,7 +6,7 @@ export default function DeportesMediaDuracion() {
         <div className='d-flex flex-column'>
             <div className='m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-8 d-flex flex-column'>
                 <h3 className='h2 text-tertiary mb-5'>
-                    Fuentes de energía en deportes de mediana duración
+                    Rendimiento en deportes de media resistencia ¿Cómo optimizar mi rendimiento?
                 </h3>
                 <iframe src='https://youtube.com/embed/LGZJUTjU-t0' height={400}
                     className='m-auto col-12 col-md-10 col-lg-8 rounded mb-5' alt='Video Fuentes de Energía en Deportes' />
