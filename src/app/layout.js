@@ -2,9 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../style.scss';
-import InstallBoostrap from "../components/installBootstrap";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer.";
+import InstallBoostrap from "../shared/components/installBootstrap";
+import Navbar from "@/shared/components/navbar";
+import Footer from "@/shared/components/footer.";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
-        <div style={{ height: '150px' }}></div>
+        <div style={{ height: '80px' }}></div>
         {children}
         <Footer />
       </body>

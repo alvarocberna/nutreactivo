@@ -6,14 +6,14 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import "../app/globals.css";
+import "../../app/globals.css";
 
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg w-100 d-flex flex-column py-0 px-0"
-            style={{ position: 'fixed', top: '0px', borderBottom: '1px solid #EFEFEF', zIndex: '1' }}>
+            style={{ position: 'fixed', top: '0px', borderBottom: '1px solid #EFEFEF', zIndex: '1'}}>
 
-            <div className='container-fluid w-100 d-flex justify-content-center' style={{ height: '25px', background: '#02B090' }}>
+            <div className='navbarTopBarSty container-fluid w-100 d-flex justify-content-center' style={{ height: '25px' }}>
                 <div className='row w-100 h-100'>
                     <div className='col d-flex justify-content-center h-100 '>
                         <a href='https://www.instagram.com/nutreactivo.cl/?hl=es-la' target='_blank' rel='noreferrer'
@@ -30,7 +30,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className="container-fluid d-flex align-items-center px-0" style={{ background: 'white', height: '75px' }}>
+            <div className="container-fluid d-flex align-items-center px-0" style={{ background: 'white', height: '60px' }}>
                 {/* Logo  */}
                 <Link className="navbar-brand ms-3" href="/">
                     <h1 className="fw-bold h2 mb-0">

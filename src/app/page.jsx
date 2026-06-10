@@ -3,7 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faCheck, faLocationDot, faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import CajaComentarios from "@/components/cajaComentarios";
+import CajaComentarios from "@/shared/components/cajaComentarios";
 import ImgInf1 from '../media/img_informe1.jpg'
 import ImgInf2 from '../media/img_informe2.jpg'
 import ImgInf3 from '../media/img_informe3.jpg'
@@ -15,6 +15,7 @@ import ImgCruzBlanca from '../media/img_isapre_cruz_blanca.png'
 import ImgNuevaMasVida from '../media/img_isapre_nueva_mas_vida.png'
 import ImgVidaTres from '../media/img_isapre_vida_tres.png'
 import ImgPortada from '../media/img_portada.png'
+import {Portada1, Portada2} from '@/features'
 
 function Portada() {
   return (
@@ -299,7 +300,7 @@ function Articulos() {
 export default function Home() {
   return (
     <>
-      <Portada />
+      <Portada2 />
       <Consulta />
       <Mediciones />
       <Valores />

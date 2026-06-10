@@ -1,3 +1,15 @@
+.navbarTopBarSty {
+    background: linear-gradient(90deg, #673DE6, #8C85FF, #02B090, #8C85FF, #673DE6);
+    background-size: 300% 100%;
+    animation: flowGradient 14s ease infinite;
+}
+
+@keyframes flowGradient {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .fondo {
     background-image: url('../media/img_fondo.png');
     background-repeat: round;
@@ -26,18 +38,23 @@
 }
 
 .btnAgendarSty {
-    background-color: #673DE6;
+    background: linear-gradient(135deg, #673DE6, #02B090);
     height: 40px;
     width: 80%;
     text-decoration: none;
     color: white;
-    border-radius: 15px;
-    transition: 0.3s;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(103, 61, 230, 0.35);
+    letter-spacing: 0.03em;
+    font-size: 0.875rem;
 }
 
 .btnAgendarSty:hover {
-    background-color: #8C85FF;
-    transition: 0.3s;
+    background: linear-gradient(135deg, #8C85FF, #02B090);
+    box-shadow: 0 6px 20px rgba(103, 61, 230, 0.5);
+    transform: translateY(-2px);
+    color: white;
 }
 
 .imgPortSty {
@@ -58,11 +75,15 @@
     }
 
     .btnAgendarSty {
-        background-color: white;
+        background: white;
         height: 100%;
         color: black;
         border-radius: 0px;
         width: 100%;
+        box-shadow: none;
+        letter-spacing: normal;
+        font-size: inherit;
+        transform: none;
     }
 }
 
