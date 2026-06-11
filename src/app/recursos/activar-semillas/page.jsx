@@ -1,11 +1,6 @@
 
 import React from 'react'
 import Image from 'next/image'
-import imgSemilla from '../../../media/img_semilla_germinada.png'
-import imgPaso1 from '../../../media/img_semillas_chorro_agua.jpeg';
-import imgPaso2 from '../../../media/img_semillas_agua.jpeg';
-import imgPaso3 from '../../../media/img_reloj.png';
-import imgPaso4 from '../../../media/img_semillas_zapallo.jpg';
 
 export default function ActivarSemillas() {
     return (
@@ -27,7 +22,7 @@ export default function ActivarSemillas() {
                         aumentando la calidad nutricional del alimento. De este modo,
                         laS semillaS liberaN todo su potencial nutritivo.
                     </p>
-                    <Image src={imgPaso2} className='col-12 col-md-6 col-lg-6 rounded m-auto' style={{ height: '300px', objectFit: 'cover' }}></Image>
+                    <Image src='/media/img_semillas_agua.jpeg' width={600} height={300} className='col-12 col-md-6 col-lg-6 rounded m-auto' style={{ objectFit: 'cover' }}></Image>
                 </div>
                 <div className='d-flex flex-column'>
                     <h4 className='text-primary mb-3'>Beneficios de activar semillas</h4>
@@ -47,7 +42,7 @@ export default function ActivarSemillas() {
                                 naturales (no tostadas, partidas o peladas).
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso1} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_semillas_chorro_agua.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -57,7 +52,7 @@ export default function ActivarSemillas() {
                                 de 1:4 entre las semillas y el agua.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso2} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_semillas_agua.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -68,7 +63,7 @@ export default function ActivarSemillas() {
                                 Mientras que, las semillas grandes las dejaremos por 8 a 12 horas.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso3} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_reloj.png' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -78,7 +73,7 @@ export default function ActivarSemillas() {
                                 Con esto ya estarán listas para consumir.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso4} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_semillas_zapallo.jpg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                 </div>
             </div>

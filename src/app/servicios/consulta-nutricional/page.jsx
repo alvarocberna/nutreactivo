@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import ImgPlan from '../../../media/img_plan_nutricional.png';
 import Image from "next/image";
 import EvFisica from '../../antropometria/evaluacion-fisica/page.jsx';
 import { Valores } from '../../../app/page.jsx';
@@ -47,8 +46,8 @@ export default function ConsultaNutricional() {
                             </ul>
                         </div>
                         <div className='col-12 col-lg-6 d-flex justify-content-center'>
-                            <Image className='col-7 col-sm-7 col-md-4 col-lg-6 col-xl-5 rounded shadow' src={ImgPlan}
-                                style={{ objectFit: 'contain', height: '350px' }} alt="..."></Image>
+                            <Image className='col-7 col-sm-7 col-md-4 col-lg-6 col-xl-5 rounded shadow' src="/media/img_plan_nutricional.png"
+                                width={500} height={350} style={{ objectFit: 'contain', height: '350px' }} alt="..."></Image>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,5 @@
 
 import Image from 'next/image';
-import imgPaso1 from '../../../media/img_bowl_lentejas.jpeg';
-import imgPaso2 from '../../../media/img_lentejas_chorro_agua.jpeg';
-import imgPaso3 from '../../../media/img_lentejas_tapadas.jpeg';
-import imgPaso5 from '../../../media/img_lentejas_germinadas.jpg';
-import imgPaso6 from '../../../media/img_plato_lentejas.jpg';
-import imgSemilla from '../../../media/img_semilla_germinada.png';
 
 import React from 'react'
 
@@ -25,7 +19,7 @@ export default function GerminarLegumbres() {
                         despertarlos de su estado de latencia, para que una vez activos liberen todo su potencial
                         nutricional, eliminando sus antinutrientes.
                     </p>
-                    <Image src={imgSemilla} className='col-12 col-md-6 col-lg-6 rounded m-auto' style={{ height: '300px', objectFit: 'cover' }}></Image>
+                    <Image src='/media/img_semilla_germinada.png' width={600} height={300} className='col-12 col-md-6 col-lg-6 rounded m-auto' style={{ objectFit: 'cover' }}></Image>
                 </div>
                 <div>
                     <h4 className='text-primary mb-3'>Qué alimentos germinar</h4>
@@ -73,7 +67,7 @@ export default function GerminarLegumbres() {
 
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso1} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_bowl_lentejas.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -84,7 +78,7 @@ export default function GerminarLegumbres() {
                                 para eliminar cualquier residuo.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso2} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_chorro_agua.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -95,7 +89,7 @@ export default function GerminarLegumbres() {
                                 dias en lo que se produce la germinación.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso3} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_tapadas.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -106,7 +100,7 @@ export default function GerminarLegumbres() {
                                 cambiar el papel absorvente por uno nuevo.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso2} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_chorro_agua.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -117,7 +111,7 @@ export default function GerminarLegumbres() {
                                 signo de que la germinación ha sido exitosa.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso5} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_germinadas.jpg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                     <div className='d-flex flex-column flex-md-row justify-content-between mb-3'>
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
@@ -126,7 +120,7 @@ export default function GerminarLegumbres() {
                                 Finalmente podemos cocinar nuestras legumbres de forma tradicional.
                             </p>
                         </div>
-                        <Image className='col-12 col-md-4 rounded' src={imgPaso6} height={150} style={{ objectFit: 'cover' }} />
+                        <Image className='col-12 col-md-4 rounded' src='/media/img_plato_lentejas.jpg' width={300} height={150} style={{ objectFit: 'cover' }} />
                     </div>
                 </div>
             </div>
