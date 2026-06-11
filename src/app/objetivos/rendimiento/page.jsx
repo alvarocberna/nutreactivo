@@ -1,9 +1,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import img1 from '../../../media/img_halterofilia.jpg';
-import img2 from '../../../media/img_remo2.jpeg';
-import img3 from '../../../media/img_atletismo.jpeg';
+import img1 from '../../../shared/media/img_halterofilia.jpg';
+import img2 from '../../../shared/media/img_remo2.jpeg';
+import img3 from '../../../shared/media/img_atletismo.jpeg';
 
 export default function Rendimiento() {
     return (

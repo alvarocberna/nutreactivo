@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
-import ImgNutri from '../../media/img-alvaro-cañete-nutricionista.jpeg'
+import ImgNutri from '../../shared/media/img-alvaro-cañete-nutricionista.jpeg'
 
 export default function Nutricionistas() {
     return (
