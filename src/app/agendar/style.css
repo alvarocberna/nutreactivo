@@ -1,17 +1,228 @@
-.btnAgeSty {
-    height: 80px;
+/* ── Layout ─────────────────────────────────────────── */
+.agendarSection {
+    max-width: 900px;
+    margin: 120px auto 180px;
+    padding: 0 1.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border: 1px solid #8C85FF;
-    border-radius: 15px;
-    transition: 0.4s;
-    text-decoration: none;
-    color: #673DE6;
+    gap: 4rem;
 }
 
-.btnAgeSty:hover {
-    background-color: #F0EFFF;
-    transition: 0.4s;
-    cursor: pointer;
+/* ── Header ─────────────────────────────────────────── */
+.agendarHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.agendarBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(103, 61, 230, 0.08);
+    color: #673DE6;
+    border: 1px solid rgba(103, 61, 230, 0.2);
+    border-radius: 100px;
+    padding: 0.35rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.agendarTitle {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    color: #1a1a2e;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.agendarSubtitle {
+    max-width: 540px;
+    color: #6b7280;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Steps ─────────────────────────────────────────── */
+.agendarSteps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.agendarStep {
+    background: linear-gradient(150deg, #ffffff 55%, rgba(140, 133, 255, 0.08) 100%);
+    border: 1px solid rgba(140, 133, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(103, 61, 230, 0.08);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agendarStep:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(103, 61, 230, 0.15);
+}
+
+.agendarStepNum {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #673DE6, #8C85FF);
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agendarStepIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(103, 61, 230, 0.1), rgba(2, 176, 144, 0.08));
+    color: #673DE6;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.agendarStepTitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.agendarStepDesc {
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── CTA Card ───────────────────────────────────────── */
+.agendarCard {
+    width: 100%;
+    max-width: 560px;
+    background: linear-gradient(150deg, #ffffff 55%, rgba(140, 133, 255, 0.08) 100%);
+    border: 1px solid rgba(140, 133, 255, 0.35);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(103, 61, 230, 0.12);
+    overflow: hidden;
+}
+
+.agendarCardAccent {
+    height: 5px;
+    background: linear-gradient(90deg, #673DE6, #8C85FF, #02B090);
+}
+
+.agendarCardBody {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.agendarWaIcon {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.agendarCardTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.agendarCardDesc {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 400px;
+    margin: 0;
+}
+
+.agendarBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.9rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 6px 22px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 360px;
+}
+
+.agendarBtn:hover {
+    background: linear-gradient(135deg, #22c35e, #0f7a6e);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+    transform: translateY(-3px);
+    color: white;
+}
+
+.agendarCardNote {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #9ca3af;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 700px) {
+    .agendarSteps {
+        grid-template-columns: 1fr;
+    }
+
+    .agendarSection {
+        margin-top: 100px;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .agendarCardBody {
+        padding: 2rem 1.25rem;
+    }
 }
