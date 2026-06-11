@@ -1,8 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-regular-svg-icons'
+import { faStar, faQuoteLeft, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import "../../app/globals.css"
 
-let comentarios = [
+const comentarios = [
     {
         id: 1,
         nombre: "César Abaroa",
@@ -59,74 +60,93 @@ let comentarios = [
     }
 ]
 
-let numComentarios = comentarios.length;
-let numCajas = Array.from({ length: (numComentarios / 3) }, (_, i) => i + 1);
+const numCajas = Array.from({ length: Math.ceil(comentarios.length / 3) }, (_, i) => i + 1)
 
+function getInitials(nombre) {
+    return nombre.split(' ').slice(0, 2).map(w => w[0]).join('').toUpperCase()
+}
 
 function IterarComentarios({ numDeCaja, listaCom }) {
-    // Devuelve 3 comentarios de la lista de comentarios
-    let indiceFinalListaCom = numDeCaja * 3;
-    let indiceInicialListaCom = indiceFinalListaCom - 3;
-    let comentariosMostrados = listaCom.slice(indiceInicialListaCom, indiceFinalListaCom).map((com, index) =>
-        <div key={index} className='col-11 col-md-4 col-lg-3 mx-auto bg-white mb-3' style={{ border: '1px solid #D5DFFF', borderRadius: '15px' }}>
-            <div className='bg-quaternary w-100 px-3 py-3' style={{ borderRadius: '15px 15px 0px 0px' }}>
-                <p className='mb-0  text-primary h5'>{com.nombre}</p>
-            </div>
-            <div className='px-3 py-3'>
-                <div className='d-flex mb-3'>
-                    {Array.from({ length: com.calificacion }, (_, index) => (
-                        <FontAwesomeIcon key={index} icon={faStar} className='me-2 text-primary' style={{ height: '20px' }} />
-                    ))}
+    const fin = numDeCaja * 3
+    const inicio = fin - 3
+    const cards = listaCom.slice(inicio, fin).map((com, index) => (
+        <div key={index} className="col-11 col-md-4 col-lg-3 mx-auto mb-3">
+            <div className="comentCardSty h-100">
+                <div className="objCardAccent" />
+                <div className="p-4 d-flex flex-column h-100">
+
+                    <div className="d-flex align-items-center gap-3 mb-3">
+                        <div className="comentAvatarSty">
+                            {getInitials(com.nombre)}
+                        </div>
+                        <div>
+                            <p className="mb-1 fw-bold text-tertiary" style={{ fontSize: '0.95rem' }}>
+                                {com.nombre}
+                            </p>
+                            <div className="d-flex gap-1">
+                                {Array.from({ length: com.calificacion }, (_, i) => (
+                                    <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#F59E0B', height: '13px' }} />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <FontAwesomeIcon
+                        icon={faQuoteLeft}
+                        style={{ color: '#8C85FF', opacity: 0.45, width: '20px', height: '20px', marginBottom: '10px' }}
+                    />
+
+                    <p className="mb-0 flex-grow-1" style={{ textAlign: 'justify', fontSize: '13.5px', lineHeight: 1.75, color: '#555' }}>
+                        {com.comentario}
+                    </p>
+
                 </div>
-                <p style={{ textAlign: 'justify', fontSize: '14px' }}>{com.comentario}</p>
             </div>
         </div>
-    )
+    ))
     return (
-        <div className='col-12 d-flex flex-column flex-md-row justify-content-center'>
-            {comentariosMostrados}
+        <div className="col-12 d-flex flex-column flex-md-row justify-content-center">
+            {cards}
         </div>
     )
 }
 
-
 export default function CajaComentarios() {
-    // almacena en cajasMostradas los elementos del carrusel en fn del total de comentarios dividido 3
-    let cajasMostradas = [];
-    numCajas.map(num => {
-        if (num === 1) {
-            cajasMostradas.push(
-                <div key={num} className="carousel-item active">
-                    <div className='d-flex'>
-                        <IterarComentarios numDeCaja={num} listaCom={comentarios} />
-                    </div>
-                </div>)
-        } else {
-            cajasMostradas.push(
-                <div key={num} className="carousel-item">
-                    <div className='d-flex'>
-                        <IterarComentarios numDeCaja={num} listaCom={comentarios} />
-                    </div>
-                </div>
-            )
-        }
-    }
-    )
+    const cajasMostradas = numCajas.map(num => (
+        <div key={num} className={`carousel-item${num === 1 ? ' active' : ''}`}>
+            <IterarComentarios numDeCaja={num} listaCom={comentarios} />
+        </div>
+    ))
+
     return (
-        <div className='d-flex w-100' style={{ marginBottom: '100px' }}>
-            <div className='d-flex flex-column m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-11'>
-                <h2 className='text-tertiary text-center mb-5'>Opiniones</h2>
-                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        <div className="d-flex w-100" style={{ marginBottom: '100px', minHeight: '100vh' }}>
+            <div className="d-flex flex-column m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-11">
+                <h2 className="text-tertiary text-center mb-2">Opiniones</h2>
+                <p className="text-center text-muted mb-5">Lo que dicen nuestros pacientes</p>
+
+                <div id="carouselComentarios" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner d-flex">
                         {cajasMostradas}
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
+                    <button
+                        className="carousel-control-prev comentCarouselBtnSty"
+                        type="button"
+                        data-bs-target="#carouselComentarios"
+                        data-bs-slide="prev"
+                        aria-label="Anterior"
+                        style={{ width: '44px', left: '-55px' }}
+                    >
+                        <FontAwesomeIcon icon={faChevronLeft} style={{ width: '15px', height: '15px' }} />
                     </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
+                    <button
+                        className="carousel-control-next comentCarouselBtnSty"
+                        type="button"
+                        data-bs-target="#carouselComentarios"
+                        data-bs-slide="next"
+                        aria-label="Siguiente"
+                        style={{ width: '44px', right: '-55px' }}
+                    >
+                        <FontAwesomeIcon icon={faChevronRight} style={{ width: '15px', height: '15px' }} />
                     </button>
                 </div>
             </div>
