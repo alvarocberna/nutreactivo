@@ -70,12 +70,12 @@ function IterarComentarios({ numDeCaja, listaCom }) {
     const fin = numDeCaja * 3
     const inicio = fin - 3
     const cards = listaCom.slice(inicio, fin).map((com, index) => (
-        <div key={index} className="col-11 col-md-4 col-lg-3 mx-auto mb-3">
-            <div className="comentCardSty h-100">
+        <div key={index} className="col-11 col-md-4 mx-auto mb-3">
+            <div className="comentCardSty h-100 col-11 mx-auto">
                 <div className="objCardAccent" />
                 <div className="p-4 d-flex flex-column h-100">
 
-                    <div className="d-flex align-items-center gap-3 mb-3">
+                    <div className="d-flex align-items-center mb-3">
                         <div className="comentAvatarSty">
                             {getInitials(com.nombre)}
                         </div>
@@ -119,8 +119,8 @@ export default function CajaComentarios() {
     ))
 
     return (
-        <div className="d-flex w-100" style={{ marginBottom: '100px', minHeight: '100vh' }}>
-            <div className="d-flex flex-column m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-11">
+        <div className="d-flex w-100 sectionHeightSty" style={{ marginBottom: '100px' }}>
+            <div className="d-flex flex-column m-auto col-10 col-md-11 col-lg-11 col-xl-10">
                 <h2 className="text-tertiary text-center mb-2">Opiniones</h2>
                 <p className="text-center text-muted mb-5">Lo que dicen nuestros pacientes</p>
 
@@ -129,22 +129,22 @@ export default function CajaComentarios() {
                         {cajasMostradas}
                     </div>
                     <button
-                        className="carousel-control-prev comentCarouselBtnSty"
+                        className="carousel-control-prev comentCarouselBtnSty cajaComentariosBtnPrev"
                         type="button"
                         data-bs-target="#carouselComentarios"
                         data-bs-slide="prev"
                         aria-label="Anterior"
-                        style={{ width: '44px', left: '-55px' }}
+                        style={{ width: '44px' }}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} style={{ width: '15px', height: '15px' }} />
                     </button>
                     <button
-                        className="carousel-control-next comentCarouselBtnSty"
+                        className="carousel-control-next comentCarouselBtnSty cajaComentariosBtnNext"
                         type="button"
                         data-bs-target="#carouselComentarios"
                         data-bs-slide="next"
                         aria-label="Siguiente"
-                        style={{ width: '44px', right: '-55px' }}
+                        style={{ width: '44px' }}
                     >
                         <FontAwesomeIcon icon={faChevronRight} style={{ width: '15px', height: '15px' }} />
                     </button>

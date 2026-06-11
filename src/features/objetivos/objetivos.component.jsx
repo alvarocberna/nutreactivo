@@ -33,13 +33,12 @@ const OBJETIVOS = [
 export function Objetivos() {
   return (
     <section
-      className="position-relative"
+      className="position-relative sectionHeightSty"
       style={{
         backgroundImage: "url('/images/img-background-objetivos.jpeg')",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh",
         marginBottom: "100px",
       }}
     >

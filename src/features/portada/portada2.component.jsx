@@ -25,10 +25,19 @@ const iconWrapperStyle = {
   flexShrink: 0,
 }
 
+const mobileServices = [
+  { icon: faUser, text: 'Alimentación personalizada' },
+  { icon: faPills, text: 'Suplementación deportiva' },
+  { icon: faBottleWater, text: 'Estrategias nutricionales' },
+  { icon: faFileImage, text: 'Informe físico completo' },
+  { icon: faLocationDot, text: 'Atenciones en Viña del Mar' },
+  { icon: faLaptop, text: 'Atenciones Online' },
+]
+
 export function Portada2() {
   return (
     <div
-      className="container-fluid"
+      className="container-fluid portada2-container"
       style={{
         backgroundImage: "url('/images/img-background-portada.jpeg')",
         backgroundSize: 'cover',
@@ -37,12 +46,16 @@ export function Portada2() {
         minHeight: '90vh',
         height: '90vh',
         marginBottom: '150px',
+        position: 'relative',
       }}
     >
-      <div className="m-auto w-full d-flex flex-column flex-md-row justify-content-start align-items-center"
-      style={{height: '100%'}}>
-        <div className="col-1">x</div>
-        <div className="mb-5 col-12 col-sm-12 col-md-4 col-lg-5">
+      {/* capa intermedia oscura */}
+      <div className="d-block d-md-none" style={{position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.4)', zIndex: 0}} />
+      {/* contenido */}
+      <div className="m-auto w-full d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center"
+      style={{height: '100%', position: 'relative', zIndex: 1}}>
+        <div className="d-none d-md-block col-1"></div>
+        <div className="portada2-content col-12 col-md-8 col-lg-7 col-xl-5">
           {/* titulo */}
           <h1 className="h1 display-4 mb-2 fw-bold text-white" style={{letterSpacing: '0.03em'}}>
             Nutrición para el <br/> deporte y salud
@@ -50,8 +63,19 @@ export function Portada2() {
           <p className="text-white mb-4" style={{fontSize: '20px', letterSpacing: '0.03em'}}>
             Que la alimentación te guíe a tu objetivo
           </p>
-          {/* cards */}
-          <div className="d-flex flex-row gap-2">
+
+          {/* Mobile: columna única, sin card, texto blanco */}
+          <div className="d-flex d-md-none flex-column gap-2">
+            {mobileServices.map((service, index) => (
+              <div key={index} className="d-flex align-items-center gap-2">
+                <FontAwesomeIcon icon={service.icon} style={iconCheckStyle} />
+                <p className="mb-0 text-white">{service.text}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: dos columnas con cards blancas */}
+          <div className="d-none d-md-flex flex-row gap-2">
             {/* col 1 */}
             <div className="d-flex flex-column gap-2 col-6">
               <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">

@@ -104,48 +104,63 @@ export function Mediciones() {
 
   return (
     <>
-      <div className="col-12 d-flex flex-column-reverse flex-md-row" style={{ marginBottom: '100px', minHeight: '100vh' }}>
+      <div className="col-12 d-flex flex-column-reverse flex-md-row sectionHeightSty" style={{ marginBottom: '100px' }}>
 
         {/* LEFT */}
-        <div className="m-auto col-12 col-sm-8 col-md-5 d-flex py-5" style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <div className="m-auto col-12 col-sm-8 col-md-5 d-flex py-5" 
+        style={{ justifyContent: 'center', alignItems: 'center'}}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
 
-            <button onClick={goPrev} style={{ background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
+            <button className="d-none d-sm-block" onClick={goPrev} style={{ background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
               <FontAwesomeIcon style={{ width: '35px', fontSize: '35px', color: '#673DE6' }} icon={faCircleChevronLeft} />
               <span className="visually-hidden">Previous</span>
             </button>
 
-            <div style={{ perspective: '900px' }}>
-              <div
-                style={{
-                  position: 'relative',
-                  width: `${CARD_W}px`,
-                  height: `${CARD_H}px`,
-                  borderRadius: '14px',
-                  overflow: 'hidden',
-                  transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) rotateZ(${tilt.z}deg)`,
-                  transition: isGrabbing ? 'none' : 'transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.65s ease',
-                  boxShadow: shadow,
-                  cursor: isGrabbing ? 'grabbing' : 'grab',
-                  userSelect: 'none',
-                  touchAction: 'none',
-                }}
-                onMouseDown={onMouseDown}
-                onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
-                onTouchEnd={onTouchEnd}
-              >
-                <Image
-                  src={IMAGES[imgIndex]}
-                  fill
-                  alt="Informe antropometrico medición deportiva"
-                  draggable={false}
-                  style={{ objectFit: 'cover' }}
-                />
+            <div className="d-flex flex-column align-items-center">
+              <div style={{ perspective: '900px' }}>
+                <div
+                  style={{
+                    position: 'relative',
+                    width: `${CARD_W}px`,
+                    height: `${CARD_H}px`,
+                    borderRadius: '14px',
+                    overflow: 'hidden',
+                    transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) rotateZ(${tilt.z}deg)`,
+                    transition: isGrabbing ? 'none' : 'transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.65s ease',
+                    boxShadow: shadow,
+                    cursor: isGrabbing ? 'grabbing' : 'grab',
+                    userSelect: 'none',
+                    touchAction: 'none',
+                  }}
+                  onMouseDown={onMouseDown}
+                  onTouchStart={onTouchStart}
+                  onTouchMove={onTouchMove}
+                  onTouchEnd={onTouchEnd}
+                >
+                  <Image
+                    src={IMAGES[imgIndex]}
+                    fill
+                    alt="Informe antropometrico medición deportiva"
+                    draggable={false}
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
+
+              {/* Botones móvil: debajo de la card, solo en xs */}
+              <div className="d-flex d-sm-none justify-content-center mt-4" style={{ gap: '50px' }}>
+                <button onClick={goPrev} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                  <FontAwesomeIcon style={{ width: '35px', fontSize: '35px', color: '#673DE6' }} icon={faCircleChevronLeft} />
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button onClick={goNext} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                  <FontAwesomeIcon style={{ width: '35px', fontSize: '35px', color: '#673DE6' }} icon={faCircleChevronRight} />
+                  <span className="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
 
-            <button onClick={goNext} style={{ background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
+            <button className="d-none d-sm-block" onClick={goNext} style={{ background: 'none', border: 'none', cursor: 'pointer', flexShrink: 0 }}>
               <FontAwesomeIcon style={{ width: '35px', fontSize: '35px', color: '#673DE6' }} icon={faCircleChevronRight} />
               <span className="visually-hidden">Next</span>
             </button>

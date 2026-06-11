@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function Valores() {
   return (
-    <div className="d-flex flex-column justify-content-center" style={{ marginBottom: '100px', minHeight: '100vh' }} id="valores">
+    <div className="d-flex flex-column justify-content-center sectionHeightSty" style={{ marginBottom: '100px' }} id="valores">
       <h2 className="m-auto col-10 col-sm-8 col-md-10 col-lg-9 col-xl-10 text-center mb-5 text-tertiary">Valores</h2>
-      <div className="m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-10">
-        <div className="d-flex flex-column flex-md-row col-12 justify-content-around gap-3">
+      <div className="m-auto col-10 col-sm-11 col-xl-10">
+        <div className="d-flex flex-column flex-md-row col-12 justify-content-around">
 
           {/* CARD 1 - Consulta nutricional inicial */}
           <div className="col-12 col-md-4 d-flex justify-content-center align-items-stretch">

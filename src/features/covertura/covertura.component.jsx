@@ -18,7 +18,7 @@ const ISAPRES = [
 
 export function Covertura() {
   return (
-    <div className="container-fluid d-flex flex-column justify-content-center py-5" style={{ minHeight: '80vh' }}>
+    <div className="container-fluid d-flex flex-column justify-content-center py-5 sectionHeightSty">
       <h2 className="m-auto col-11 col-sm-8 col-md-10 col-lg-9 col-xl-10 text-center mb-5 text-tertiary">
         Cobertura
       </h2>

@@ -5,7 +5,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
 export function Consulta() {
   return (
-    <div className="col-12 d-flex" style={{ marginBottom: '100px', minHeight: '100vh' }}>
+    <div className="col-12 d-flex sectionHeightSty" style={{ marginBottom: '100px' }}>
       <div className="d-flex flex-column-reverse flex-md-row m-auto col-10 col-sm-8 col-md-10 col-lg-11 col-xl-9">
         <iframe height="400px" width="300px" style={{ borderRadius: '15px' }} className='m-auto me-lg-5 mt-3'
           src="https://youtube.com/embed/3m74gRagBaQ" alt='Video Consulta Nutricional Nutricionista deportivo Álvaro Cañete'>

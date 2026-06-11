@@ -284,3 +284,49 @@
         height: 250px;
     }
 }
+
+@media only screen and (max-width: 767.98px) {
+    .portada2-container {
+        background-position: 75% center !important;
+    }
+    .portada2-content {
+        width: 90% !important;
+    }
+    .portada2-overlay {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+}
+
+.portada2-overlay {
+    background-color: transparent;
+}
+
+.sectionHeightSty {
+    min-height: 100vh;
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    .sectionHeightSty {
+        min-height: 75vh;
+    }
+}
+
+#carouselComentarios {
+    padding-bottom: 60px;
+}
+
+.carousel-control-prev.cajaComentariosBtnPrev {
+    top: auto;
+    bottom: 0;
+    left: calc(50% - 69px);
+    right: auto;
+    height: 44px;
+}
+
+.carousel-control-next.cajaComentariosBtnNext {
+    top: auto;
+    bottom: 0;
+    left: calc(50% + 25px);
+    right: auto;
+    height: 44px;
+}
