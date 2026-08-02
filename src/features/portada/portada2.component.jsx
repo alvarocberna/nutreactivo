@@ -15,8 +15,9 @@ const iconLocationStyle = {
 }
 
 const iconWrapperStyle = {
-  background: '#F0F0F0',
-  border: '1.5px solid rgba(2, 176, 144, 0.45)',
+  background: `radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 50%),
+    radial-gradient(circle at 88% 88%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%)`,
+  border: '1.5px solid rgba(255, 255, 255, 0.35)',
   borderRadius: '8px',
   padding: '6px 8px',
   display: 'flex',
@@ -78,46 +79,46 @@ export function Portada2() {
           <div className="d-none d-md-flex flex-row gap-2">
             {/* col 1 */}
             <div className="d-flex flex-column gap-2 col-6">
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faUser} style={iconCheckStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">Alimentación personalizada</p>
+                <p className="mb-0 text-white">Alimentación personalizada</p>
               </div>
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faPills} style={iconCheckStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">Suplementación deportiva</p>
+                <p className="mb-0 text-white">Suplementación deportiva</p>
               </div>
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faBottleWater} style={iconCheckStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">Estrategias nutricionales</p>
+                <p className="mb-0 text-white">Estrategias nutricionales</p>
               </div>
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faFileImage} style={iconCheckStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">Informe físico completo</p>
+                <p className="mb-0 text-white">Informe físico completo</p>
               </div>
             </div>
             {/* col 2 */}
             <div className="d-flex flex-column justify-content-center gap-2 col-6">
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faLocationDot} style={iconLocationStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">
+                <p className="mb-0 text-white">
                   Atenciones en Viña del Mar
                 </p>
               </div>
-              <div className="d-flex align-items-center bg-white py-2 ps-3 rounded">
+              <div className="d-flex align-items-center portada2CardGlassSty py-2 ps-3 rounded">
                 <div style={iconWrapperStyle} className="me-2">
                   <FontAwesomeIcon icon={faLaptop} style={iconLocationStyle} />
                 </div>
-                <p className="mb-0 text-tertiary">
+                <p className="mb-0 text-white">
                   Atenciones Online
                 </p>
               </div>

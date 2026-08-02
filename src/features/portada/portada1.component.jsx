@@ -9,7 +9,7 @@ import ImgPortada from '../../shared/media/img_portada.png'
 
 export function Portada1() {
   return (
-    <div className="container-fluid" style={{ marginBottom: '150px' }}>
+    <div className="container-fluid" style={{ marginBottom: '150px'}}>
       <div className=" m-auto col-11 col-sm-10 col-md-11 col-lg-11 col-xl-10 d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="m-auto col-12 col-sm-12 col-md-4 col-lg-4 ">
           <h1 className="h1 mb-4 fw-bold text-tertiary">Nutrición para el deporte y salud</h1>

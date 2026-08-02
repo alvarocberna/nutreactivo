@@ -4,6 +4,123 @@
     animation: flowGradient 14s ease infinite;
 }
 
+.navbarTopBarMaratonSty {
+    background: linear-gradient(90deg, #ee8f17, #e41141, #ee8f17);
+    background-size: 300% 100%;
+    animation: flowGradient 14s ease infinite;
+}
+
+.maratonBarSty {
+    min-height: 45px;
+    padding: 6px 12px;
+}
+
+.navbarSpacerSty {
+    height: var(--navbar-height, 105px);
+}
+
+.maratonBarContent {
+    column-gap: 18px;
+    row-gap: 8px;
+}
+
+.maratonBarText {
+    font-size: 0.9rem;
+    gap: 5px;
+}
+
+.maratonCountdownUnit {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 7px;
+    padding: 3px 7px;
+    width: 38px;
+    line-height: 1.1;
+}
+
+.maratonCountdownValue {
+    font-size: 0.9rem;
+}
+
+.maratonCountdownLabel {
+    font-size: 0.5rem;
+}
+
+.maratonBarBtn {
+    padding: 4px 13px;
+    border-radius: 18px;
+    font-size: 0.77rem;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .maratonBarSty {
+        padding: 8px 10px;
+    }
+
+    .maratonBarContent {
+        column-gap: 10px;
+        row-gap: 6px;
+    }
+
+    .maratonBarText {
+        font-size: 0.78rem;
+    }
+
+    .maratonCountdownUnit {
+        width: 34px;
+        padding: 3px 6px;
+    }
+
+    .maratonCountdownValue {
+        font-size: 0.8rem;
+    }
+
+    .maratonCountdownLabel {
+        font-size: 0.45rem;
+    }
+
+    .maratonBarBtn {
+        padding: 4px 11px;
+        font-size: 0.68rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .maratonBarSty {
+        padding: 8px 8px;
+    }
+
+    .maratonBarContent {
+        column-gap: 6px;
+        row-gap: 6px;
+    }
+
+    .maratonBarText {
+        font-size: 0.62rem;
+        gap: 4px;
+    }
+
+    .maratonCountdownUnit {
+        width: 28px;
+        padding: 2px 4px;
+        border-radius: 6px;
+    }
+
+    .maratonCountdownValue {
+        font-size: 0.68rem;
+    }
+
+    .maratonCountdownLabel {
+        font-size: 0.35rem;
+    }
+
+    .maratonBarBtn {
+        padding: 3px 9px;
+        font-size: 0.58rem;
+        gap: 4px;
+    }
+}
+
 @keyframes flowGradient {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
@@ -299,6 +416,14 @@
 
 .portada2-overlay {
     background-color: transparent;
+}
+
+.portada2CardGlassSty {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .sectionHeightSty {

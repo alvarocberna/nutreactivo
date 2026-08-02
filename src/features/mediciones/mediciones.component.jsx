@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
 import Image from "next/image";
-import "../../app/globals.css"
+// import "../../app/globals.css"
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faCircleChevronLeft, faXmark } from '@fortawesome/free-solid-svg-icons'
