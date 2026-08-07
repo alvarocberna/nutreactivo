@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import "../../app/globals.css";
@@ -61,8 +62,8 @@ export default function BarMaratonVina() {
                                 para la maraton de viña
                             </span>
                             {/* 4 - BUTTON */}
-                            <button
-                                type='button'
+                            <Link
+                                href='/proyeccion-carrera'
                                 className="maratonBarBtn"
                                 style={{
                                     background: '#FFD100',
@@ -72,11 +73,12 @@ export default function BarMaratonVina() {
                                     display: 'flex',
                                     alignItems: 'center',
                                     cursor: 'pointer',
-                                    whiteSpace: 'nowrap'
+                                    whiteSpace: 'nowrap',
+                                    textDecoration: 'none'
                                 }}>
-                                PREPÁRATE DESDE YA
+                                PROYECTA TU CARRERA
                                 <FontAwesomeIcon icon={faArrowRight} />
-                            </button>
+                            </Link>
                         </>
                     )}
                 </div>
