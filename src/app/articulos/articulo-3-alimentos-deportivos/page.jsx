@@ -83,7 +83,7 @@ export default function Articulo3() {
                         </p>
                         <p className=''>
                             Es una proteína de alto valor biológico, constituye el 80% de la proteína láctea.
-                            Se caracterisa por tener una lenta velocidad de digestión y absorción, por este motivo
+                            Se caracteriza por tener una lenta velocidad de digestión y absorción, por este motivo
                             a menudo se recomienda como una alternativa en la alimentación nocturna, para lograr una
                             liberación de proteína prolongada y sostenida durante la noche.
                             Puede comprarse como caseína, caseinato de calcio o hidrolizado de caseína.
@@ -100,7 +100,7 @@ export default function Articulo3() {
 
                         </p>
                         <p className=''>
-                            <b>1.4 - Albumina de huevo (clara de huevo)</b>
+                            <b>1.4 - Albúmina de huevo (clara de huevo)</b>
                         </p>
                         <p className=''>
                             Proteína de alto valor biológico, con ausencia de carbohidratos y grasas. Solía ser
@@ -119,7 +119,7 @@ export default function Articulo3() {
                             <div className='col-12 col-lg-7 d-flex flex-column align-items-center '>
                                 <p className=''>
                                     Este tipo de alimentos tienen una gran utilidad para facilitar el aporte de grandes
-                                    cantidades de energpía de fácil absorción a los deportistas durante momentos importantes,
+                                    cantidades de energía de fácil absorción a los deportistas durante momentos importantes,
                                     como entrenamientos y competencias, al mismo tiempo que son fáciles de transportar y consumir.
                                 </p>
                                 <ul className='w-100 mb-4  '>
@@ -396,7 +396,7 @@ export default function Articulo3() {
                                     Durante ejercicios prolongados, como en eventos de ultra resistencia.
                                 </li>
                                 <li>
-                                    Cuando no hayas alimentos más completos disponibles o no sea práctico consumirlos,
+                                    Cuando no haya alimentos más completos disponibles o no sea práctico consumirlos,
                                     y se requiera de una fuente conveniente de proteína y energía.
                                 </li>
                                 <li>

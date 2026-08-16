@@ -31,10 +31,10 @@ export default function ConsultaNutricional() {
                 </div>
 
                 <div className='col-12 d-flex flex-column mb-5'>
-                    <h3 className='h3 mb-3'>Plan nutricionl personalizado</h3>
+                    <h3 className='h3 mb-3'>Plan nutricional personalizado</h3>
                     <div className='d-flex flex-column flex-lg-row justify-content-between align-items-start'>
                         <div className='col-12 col-lg-6 '>
-                            <p>El plan de alimentación está planificado en base a las características individules
+                            <p>El plan de alimentación está planificado en base a las características individuales
                                 de cada deportista, considerando su gasto de energía diario, y pensado para ser aplicado
                                 con facilidad en el día a día.</p>
                             <ul>

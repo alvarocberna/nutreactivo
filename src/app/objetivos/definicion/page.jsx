@@ -103,7 +103,7 @@ export default function Definicion() {
                         <div className='col-2 ' style={{ position: 'relative' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '14px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #0494ea', position: 'absolute', left: '-55px' }}>
-                                Al rededor del primer mes. Se da una primera mirada de los avances y reajustan las estrategias
+                                Alrededor del primer mes. Se da una primera mirada de los avances y reajustan las estrategias
                                 establecidas.
                             </div>
                         </div>
@@ -131,7 +131,7 @@ export default function Definicion() {
                         <div className='' style={{ height: '100px' }}>
                             <div className=' d-flex justify-content-center align-items-center text-white fw-bold shadow'
                                 style={{ height: '100px', width: '100px', borderRadius: '100px', backgroundColor: '#F5AA38' }}>
-                                Primera <br /> sesion
+                                Primera <br /> sesión
                             </div>
                         </div>
                         <div className='' style={{ height: '50px' }}></div>
@@ -184,7 +184,7 @@ export default function Definicion() {
                         <div className='d-flex align-items-center' style={{ position: 'relative', height: '100px' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '14px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #0494ea', position: 'absolute' }}>
-                                Al rededor del primer mes, se da una primera mirada de los avances y re ajustan las estrategias
+                                Alrededor del primer mes, se da una primera mirada de los avances y reajustan las estrategias
                                 establecidas.
                             </div>
                         </div>
@@ -204,7 +204,7 @@ export default function Definicion() {
             {/* SECCION 4: INTRO */}
             <div className='row mb-5'>
                 <div className='col-10 col-sm-8 col-md-10 col-lg-11 col-xl-9 d-flex flex-column m-auto'>
-                    <p className='h3'>Resultados esperado</p>
+                    <p className='h3'>Resultados esperados</p>
                     <p style={{ textAlign: 'justify' }}>
                         Al trabajar un periodo de pérdida de grasa corporal se proyecta una disminución de
                         2 kg por mes, considerando que el usuario cumpla con todos los factores necesarios para llevar a

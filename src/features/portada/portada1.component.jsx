@@ -35,7 +35,7 @@ export function Portada1() {
           </div>
         </div>
         <Image src={ImgPortada} className="m-auto col-12 col-sm-12 col-md-7 col-lg-7 imgPortSty"
-          alt="Portada Nutreactivo Nutricion Deportiva - Que tu alimentación guíe tu objetivo" style={{ objectFit: 'contain' }}></Image>
+          alt="Portada Nutreactivo Nutrición Deportiva - Que tu alimentación guíe tu objetivo" style={{ objectFit: 'contain' }}></Image>
       </div>
     </div>
   )

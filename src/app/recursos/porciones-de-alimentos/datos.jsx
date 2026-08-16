@@ -6,7 +6,7 @@ export const Alimentos = {
         'Arroz crudo 1/4 taza (40g)',
         'Fideos cocidos 3/4 taza (110g)',
         'Fideos crudo 1/2 taza (40g)',
-        'Papa 1 unidad regulaar (150g)',
+        'Papa 1 unidad regular (150g)',
         'Quinoa cocida 3/4 taza (100gr)',
         'Quinoa cruda 1/4 taza (40gr)',
         'Cuscús cocido: 3/4 taza (100gr)',
@@ -160,7 +160,7 @@ export const Alimentos = {
         'Leche en polvo 26% grasa 2 cdas colmadas o 3 cdas rasas (20gr)',
         'Queso chedar 1/2 tajada (20gr)',
         'Queso de cabra 1/2 tajada (25gr)',
-        'Queso holandes 1/2 tajada (20gr)',
+        'Queso holandés 1/2 tajada (20gr)',
     ],
     LacteosMedios: [
         'Leche en polvo 18% grasa 2 cdas colmadas o 3 cdas rasas (20gr)',
@@ -200,7 +200,7 @@ export const Alimentos = {
         'Pate 2 cdas (40gr)',
     ],
     Azucar: [
-        'Azucar 1 cdta (5gr)',
+        'Azúcar 1 cdta (5gr)',
         'Miel de abeja 1 cdta (6gr)',
         'Miel de palma 1 cdta (6gr)',
         'Mermeladas 1 cdta (10gr)',
@@ -210,11 +210,11 @@ export const Alimentos = {
         'Jugo 1 cdta (5gr)',
     ],
     AlcoholAlto: [
-        'Licor de cafe 1/3 vaso (40gr)',
+        'Licor de café 1/3 vaso (40gr)',
         'Licor de menta 1/3 vaso (40gr)',
     ],
     AlcoholMedio: [
-        'Champagna 1 vaso (180gr)',
+        'Champaña 1 vaso (180gr)',
         'Vino tinto 1 vaso (180gr)',
         'Vino blanco 1 vaso (180gr)',
         'Cerveza 300cc (300gr)',

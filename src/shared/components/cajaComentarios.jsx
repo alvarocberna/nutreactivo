@@ -19,7 +19,7 @@ const comentarios = [
     {
         id: 3,
         nombre: "Ariadna Martinez",
-        comentario: "Profesional muy comprometido, hace un excelente trabajo y seguimiento. He obtenido resultados muy satisfactorios, ademas es muy amable y te hace sentir muy cómodo.",
+        comentario: "Profesional muy comprometido, hace un excelente trabajo y seguimiento. He obtenido resultados muy satisfactorios, además es muy amable y te hace sentir muy cómodo.",
         calificacion: 5,
     },
     {
@@ -31,13 +31,13 @@ const comentarios = [
     {
         id: 5,
         nombre: "Roberto Apablaza",
-        comentario: "El mejor Nutricionista de todos, llegué a su consulta pesando 95kg y logré llegar a los 79 kg, dietas muy realistas, muy estructuradas. Creo que en toda medida Álvaro es y será tu mejor opción, yo le agradezco cada uno de mis cambios y sin ser esos nutricionistas que satanisan comidas.",
+        comentario: "El mejor Nutricionista de todos, llegué a su consulta pesando 95kg y logré llegar a los 79 kg, dietas muy realistas, muy estructuradas. Creo que en toda medida Álvaro es y será tu mejor opción, yo le agradezco cada uno de mis cambios y sin ser esos nutricionistas que satanizan comidas.",
         calificacion: 5,
     },
     {
         id: 6,
         nombre: "Alihozca Muñoz",
-        comentario: "Bueno alvaro es un siete. Su conocimientos como nutricionista me ayudan a alcanzar mis metas de salud de manera efectiva y sostenible. Además, su empatía y paciencia me hacen tener la confianza de comunicarle cualquier duda que tenga. Totalmente recomendado para quienes buscan un cambio real y duradero en su bienestar.",
+        comentario: "Bueno Álvaro es un siete. Sus conocimientos como nutricionista me ayudan a alcanzar mis metas de salud de manera efectiva y sostenible. Además, su empatía y paciencia me hacen tener la confianza de comunicarle cualquier duda que tenga. Totalmente recomendado para quienes buscan un cambio real y duradero en su bienestar.",
         calificacion: 5,
     },
     {
@@ -49,7 +49,7 @@ const comentarios = [
     {
         id: 8,
         nombre: "Sergio Lopez",
-        comentario: "Muy buena atención, especifica para los objetivos que uno quiere lograr. Ademas de la buena atención en la consulta, hay preocupación del avance luego de la cita.",
+        comentario: "Muy buena atención, específica para los objetivos que uno quiere lograr. Además de la buena atención en la consulta, hay preocupación del avance luego de la cita.",
         calificacion: 5,
     },
     {

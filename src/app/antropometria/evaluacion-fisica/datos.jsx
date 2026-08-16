@@ -54,9 +54,9 @@ export const InfoIndicadores = {
         targetBox: '#box6',
     },
     pliegues: {
-        titulo: "Pliegues Cutaneos",
+        titulo: "Pliegues Cutáneos",
         img: '/media/img_pliegues.png',
-        cuerpo: "Indicador correspondiente a los pliegues cutáneos obtenidos en la evaluación física. Los pliegues nos entregan una visión del de grasa corporal del usuario. Además, nos permiten estimar el nivel de grasa corporal.",
+        cuerpo: "Indicador correspondiente a los pliegues cutáneos obtenidos en la evaluación física. Los pliegues nos entregan una visión del nivel de grasa corporal del usuario. Además, nos permiten estimar el nivel de grasa corporal.",
         idInd: "indicador7",
         targetInd: "#indicador7",
         idBox: 'box7',

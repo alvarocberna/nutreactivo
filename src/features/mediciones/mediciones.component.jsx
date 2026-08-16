@@ -140,7 +140,7 @@ export function Mediciones() {
                   <Image
                     src={IMAGES[imgIndex]}
                     fill
-                    alt="Informe antropometrico medición deportiva"
+                    alt="Informe antropométrico medición deportiva"
                     draggable={false}
                     style={{ objectFit: 'cover' }}
                   />
@@ -208,7 +208,7 @@ export function Mediciones() {
           >
             <Image
               src={IMAGES[imgIndex]}
-              alt="Informe antropometrico medición deportiva"
+              alt="Informe antropométrico medición deportiva"
               width={700}
               height={900}
               style={{

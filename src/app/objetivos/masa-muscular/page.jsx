@@ -101,7 +101,7 @@ export default function MasaMuscular() {
                         <div className='col-2 ' style={{ position: 'relative' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '12px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #0494ea', position: 'absolute', left: '-55px' }}>
-                                Al rededor del primer mes. Se da una primera mirada a la composición corporal en la búsqueda
+                                Alrededor del primer mes. Se da una primera mirada a la composición corporal en la búsqueda
                                 de un crecimiento armónico. El objetivo principal es evaluar y reajustar las estrategias establecidas.
 
                             </div>
@@ -111,7 +111,7 @@ export default function MasaMuscular() {
                         <div className='col-2  d-flex justify-content-end' style={{ position: 'relative' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '12px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #00bf63', position: 'absolute', right: '-60px' }}>
-                                Al rededor de los 3 meses. Se proyecta lograr cambios importantes a nivel de masa muscular,
+                                Alrededor de los 3 meses. Se proyecta lograr cambios importantes a nivel de masa muscular,
                                 pudiendo continuar en este periodo si los indicadores físicos así lo sugieren.
                             </div>
                         </div>
@@ -130,7 +130,7 @@ export default function MasaMuscular() {
                         <div className='' style={{ height: '100px' }}>
                             <div className=' d-flex justify-content-center align-items-center text-white fw-bold shadow'
                                 style={{ height: '100px', width: '100px', borderRadius: '100px', backgroundColor: '#F5AA38' }}>
-                                Primera <br /> sesion
+                                Primera <br /> sesión
                             </div>
                         </div>
                         <div className='' style={{ height: '50px' }}></div>
@@ -183,7 +183,7 @@ export default function MasaMuscular() {
                         <div className='d-flex align-items-center' style={{ position: 'relative', height: '100px' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '12px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #0494ea', position: 'absolute' }}>
-                                Al rededor del primer mes, se da una primera mirada a la composición corporal en la búsqueda
+                                Alrededor del primer mes, se da una primera mirada a la composición corporal en la búsqueda
                                 crecimiento armónico. El objetivo principal es evaluar y reajustar las estrategias establecidas.
                             </div>
                         </div>
@@ -192,7 +192,7 @@ export default function MasaMuscular() {
                         <div className='d-flex align-items-center' style={{ position: 'relative', height: '100px' }}>
                             <div className=' rounded d-flex justify-content-center align-items-center px-2 py-1'
                                 style={{ fontSize: '12px', textAlign: 'justify', height: '120px', width: '220px', border: '3px solid #00bf63', position: 'absolute' }}>
-                                Al rededor de los 3 meses, se proyecta lograr cambios importantes a nivel de masa muscular,
+                                Alrededor de los 3 meses, se proyecta lograr cambios importantes a nivel de masa muscular,
                                 pudiendo continuar en este periodo si los indicadores físicos así lo sugieren.
                             </div>
                         </div>

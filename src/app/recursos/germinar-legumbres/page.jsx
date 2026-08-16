@@ -73,7 +73,7 @@ export default function GerminarLegumbres() {
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
                             <h4 className='text-secondary'>Paso 2</h4>
                             <p className='' style={{ textAlign: 'justify' }}>
-                                Pasadas las 12 horas de remojo, vamos a traspasar las legumbres a un colador elimninando todo el
+                                Pasadas las 12 horas de remojo, vamos a traspasar las legumbres a un colador eliminando todo el
                                 agua del remojo, y aplicaremos un chorro de agua corriente sobre las legumbres en el colador
                                 para eliminar cualquier residuo.
                             </p>
@@ -85,8 +85,8 @@ export default function GerminarLegumbres() {
                             <h4 className='text-secondary'>Paso 3</h4>
                             <p className='' style={{ textAlign: 'justify' }}>
                                 Mantendremos las legumbres en el colador, y las cubriremos con un paño húmedo o papel
-                                absorbente humedo (toalla nova). Dejaremos las legumbres en un lugar oscuro y fresco durante uno a dos
-                                dias en lo que se produce la germinación.
+                                absorbente húmedo (toalla nova). Dejaremos las legumbres en un lugar oscuro y fresco durante uno a dos
+                                días en lo que se produce la germinación.
                             </p>
                         </div>
                         <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_tapadas.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
@@ -97,7 +97,7 @@ export default function GerminarLegumbres() {
                             <p className='' style={{ textAlign: 'justify' }}>
                                 Adicionalmente, cada día debemos lavar las legumbres en germinación una o dos veces por día,
                                 para así evitar la proliferación de sustancias indeseadas. Cada vez que hagamos este proceso debemos
-                                cambiar el papel absorvente por uno nuevo.
+                                cambiar el papel absorbente por uno nuevo.
                             </p>
                         </div>
                         <Image className='col-12 col-md-4 rounded' src='/media/img_lentejas_chorro_agua.jpeg' width={300} height={150} style={{ objectFit: 'cover' }} />
@@ -106,7 +106,7 @@ export default function GerminarLegumbres() {
                         <div className='col-12 col-md-6 d-flex flex-column justify-content-center'>
                             <h4 className='text-secondary'>Paso 5</h4>
                             <p className='' style={{ textAlign: 'justify' }}>
-                                Transcurridos uno o dos días, las legumbres estarán listas para ser cocinada. Podemos
+                                Transcurridos uno o dos días, las legumbres estarán listas para ser cocinadas. Podemos
                                 evidenciar que ahora las legumbres presentan un pequeño brote, tal cual se ve en la imagen,
                                 signo de que la germinación ha sido exitosa.
                             </p>

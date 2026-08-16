@@ -123,7 +123,7 @@ function Grupo({ titulo, alimentos, alimentos2, alimentos3, img, cal, pro, cho, 
                         </p>
                     }
                     <p className='text-primary mb-1 ps-3 text-start'>
-                        Calorías: {cal} - Proteina: {pro}g - Carbohidratos: {cho}g - Lípidos: {lip}g
+                        Calorías: {cal} - Proteína: {pro}g - Carbohidratos: {cho}g - Lípidos: {lip}g
                     </p>
                     <div className='row col-12'>
                         {ListaAlimentos}
@@ -135,7 +135,7 @@ function Grupo({ titulo, alimentos, alimentos2, alimentos3, img, cal, pro, cho, 
                                 {subT2}
                             </p>
                             <p className='text-primary mb-1 ps-3 text-start'>
-                                Calorías: {cal2} - Proteina: {pro2}g - Carbohidratos: {cho2}g - Lípidos: {lip2}g
+                                Calorías: {cal2} - Proteína: {pro2}g - Carbohidratos: {cho2}g - Lípidos: {lip2}g
                             </p>
                             <div className='row col-12'>
                                 {ListaAlimentos2}
@@ -149,7 +149,7 @@ function Grupo({ titulo, alimentos, alimentos2, alimentos3, img, cal, pro, cho, 
                                 {subT3}
                             </p>
                             <p className='text-primary mb-1 ps-3 text-start'>
-                                Calorías: {cal3} - Proteina: {pro3}g - Carbohidratos: {cho3}g - Lípidos: {lip3}g
+                                Calorías: {cal3} - Proteína: {pro3}g - Carbohidratos: {cho3}g - Lípidos: {lip3}g
                             </p>
                             <div className='row col-12'>
                                 {ListaAlimentos3}
@@ -188,8 +188,8 @@ export default function PorcionesAlimentos() {
                 <Grupo titulo='Proteína animal' alimentos={Alimentos.ProteinaAnimalAG} img='/icons/icon_prote1.png' subT='Alta en grasa'
                     cal='120' pro='11' cho='1' lip='8' subT2='Baja en grasa' alimentos2={Alimentos.ProteinaAnimalBG}
                     cal2='65' pro2='11' cho2='1' lip2='2' setGrupo={setProteina1} grupo={proteina1} />
-                <Grupo titulo='Proteína vegetal' alimentos={Alimentos.ProteinaVegetalAP} img='/icons/icon_prote2.png' subT='Alta en proteina'
-                    cal='125' pro='9.5' cho='20' lip='1.5' subT2='Baja en proteina' alimentos2={Alimentos.ProteinaVegetalBP}
+                <Grupo titulo='Proteína vegetal' alimentos={Alimentos.ProteinaVegetalAP} img='/icons/icon_prote2.png' subT='Alta en proteína'
+                    cal='125' pro='9.5' cho='20' lip='1.5' subT2='Baja en proteína' alimentos2={Alimentos.ProteinaVegetalBP}
                     cal2='75' pro2='-' cho2='-' lip2='-' setGrupo={setProteina2} grupo={proteina2} />
                 <Grupo titulo='Lácteos' alimentos={Alimentos.LacteosAltos} img='/icons/icon_lacteos.png' subT='Altos en grasa'
                     cal='110' pro='5' cho='9' lip='6' subT2='Medios en grasa' alimentos2={Alimentos.LacteosMedios}

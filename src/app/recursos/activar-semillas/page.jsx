@@ -19,8 +19,8 @@ export default function ActivarSemillas() {
                         El agua y un ambiente templado simulan el riego de la lluvia para las semillas,  lo que activa
                         el inicio de su desarrollo. En este proceso ocurre una serie de reacciones al interior de la semilla,
                         en la cual disminuyen aquellas sustancias que la mantenían inactiva la semilla (antinutrientes) aumentando
-                        aumentando la calidad nutricional del alimento. De este modo,
-                        laS semillaS liberaN todo su potencial nutritivo.
+                        la calidad nutricional del alimento. De este modo,
+                        las semillas liberan todo su potencial nutritivo.
                     </p>
                     <Image src='/media/img_semillas_agua.jpeg' width={600} height={300} className='col-12 col-md-6 col-lg-6 rounded m-auto' style={{ objectFit: 'cover' }}></Image>
                 </div>

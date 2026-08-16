@@ -164,7 +164,7 @@ export default function Articulo1() {
                                     <div>
                                         <p>
                                             La función de la creatina es la de proporcionar energía en ejercicios breves pero intensos,
-                                            entregando grandes cantidades de energía, pero de corta duración, aportando su peack de energía
+                                            entregando grandes cantidades de energía, pero de corta duración, aportando su pico de energía
                                             durante los primeros 8-10 segundos de actividad intensa, para luego decaer. Un perfecto ejemplo
                                             de deportes donde la creatina tiene un rol protagónico es la prueba de 100 metros planos.
                                         </p>
@@ -210,10 +210,10 @@ export default function Articulo1() {
                                             </li>
                                             <li>
                                                 Deportes que implican esfuerzos repetidos de alta intensidad. Ej: deportes grupales
-                                                como futbol o rugby.
+                                                como fútbol o rugby.
                                             </li>
                                             <li>
-                                                Para apoyar la recuperación en periodos de perdida muscular por desuso. Ej:
+                                                Para apoyar la recuperación en periodos de pérdida muscular por desuso. Ej:
                                                 lesiones, inmovilización.
                                             </li>
                                             <li>
@@ -245,7 +245,7 @@ export default function Articulo1() {
                                             hay motivos para preferir otras formas alternativas de creatina.
                                         </p>
                                         <p>
-                                            Debemos considerar que la captación de creatina en el musculo está mediada por la insulina,
+                                            Debemos considerar que la captación de creatina en el músculo está mediada por la insulina,
                                             esto significa que su absorción se ve favorecida al consumirla junto con alimentos que aumenten
                                             la insulina en sangre como carbohidratos y proteínas. Una forma adecuada de consumirla sería
                                             después de comidas que aporten proteína (carnes, huevo, leche) y carbohidratos (arroz, pastas,
@@ -363,7 +363,7 @@ export default function Articulo1() {
                                                 carreras de media distancia que van desde los 400 metros planos hasta los 3mil.
                                             </li>
                                             <li>
-                                                Deportes que involucran esfuerzos repetitivos de alta intensidad como futbol, rugby entre otros.
+                                                Deportes que involucran esfuerzos repetitivos de alta intensidad como fútbol, rugby entre otros.
                                             </li>
                                             <li>
                                                 Como alternativa al bicarbonato de sodio si este nos produce malestar gastrointestinal.
@@ -558,7 +558,7 @@ export default function Articulo1() {
                                     <div>
                                         <p>
                                             El principal efecto secundario con el bicarbonato de sodio es el malestar gastrointestinal
-                                            que incluye: nauseas, diarrea, dolor de estómago y vómito. Para disminuir estos efectos vamos
+                                            que incluye: náuseas, diarrea, dolor de estómago y vómito. Para disminuir estos efectos vamos
                                             a empezar con la carga unos 120-150 minutos antes, y consumirla lentamente durante unos 30-60 minutos.
                                             Además, debemos consumir con abundante líquido y acompañarlo con carbohidratos para mejorar la absorción.
                                         </p>
@@ -675,7 +675,7 @@ export default function Articulo1() {
                                                 Para apoyar el entrenamiento aeróbico.
                                             </li>
                                             <li>
-                                                Ejercicios intermitentes de alta intensidad donde hayan sprints de corta duración como el futbol, rugby.
+                                                Ejercicios intermitentes de alta intensidad donde hayan sprints de corta duración como el fútbol, rugby.
                                             </li>
                                             <li>
                                                 En la exposición a condiciones hipóxicas, o con poco oxígeno, como entrenamiento de altura o montañismo.
@@ -842,7 +842,7 @@ export default function Articulo1() {
                                                 Deportes de resistencia sobre 60 minutos como ciclismo.
                                             </li>
                                             <li>
-                                                Deportes de equipo como futbol o rugby.
+                                                Deportes de equipo como fútbol o rugby.
                                             </li>
                                             <li>
                                                 Deportes breves, sostenidos y de alta intensidad como el remo.
@@ -874,7 +874,7 @@ export default function Articulo1() {
                                     <div>
                                         <p className=''>
                                             Existen diversos protocolos de ingesta de cafeína para mejorar el rendimiento pudiendo
-                                            siniestrarse antes de la sesión de ejercicio, distribuida durante el ejercicio o al final
+                                            administrarse antes de la sesión de ejercicio, distribuida durante el ejercicio o al final
                                             del ejercicio cuando la fatiga comienza a ocurrir.
                                         </p>
                                         <p className=''>

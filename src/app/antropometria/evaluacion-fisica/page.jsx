@@ -45,8 +45,8 @@ export default function EvaluacionFisica() {
                     <h3 className=''>¿En qué consiste la evaluación?</h3>
                     <p className='' style={{ textAlign: 'justify' }}>
                         Durante la evaluación física el nutricionista realizará la toma de mediciones
-                        corporales como lo son los pliegues, perímetros, diametros óseos, peso y talla,
-                        todo según el estandar internacional ISAK I. Esta evaluación tiene una duración de
+                        corporales como lo son los pliegues, perímetros, diámetros óseos, peso y talla,
+                        todo según el estándar internacional ISAK I. Esta evaluación tiene una duración de
                         10 minutos.
                     </p>
                     <p>

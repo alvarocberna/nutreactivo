@@ -37,7 +37,7 @@ export default function Articulo6() {
                             El timing se fundamenta en que las reservas de energía del cuerpo son limitadas y se pueden agotar
                             rápidamente durante una sesión de entrenamiento o competencia, lo cual implica una pérdida importante
                             del rendimiento. Sin embargo, al introducir alimentos de rápida absorción alrededor del evento deportivo
-                            vamos a favorecer la carga de energía y utilización de fuentes externar (alimentos) en lugar de las
+                            vamos a favorecer la carga de energía y utilización de fuentes externas (alimentos) en lugar de las
                             reservas internas, permitiendo retrasar el agotamiento y prolongar el rendimiento lo máximo posible.
                         </p>
                     </div>

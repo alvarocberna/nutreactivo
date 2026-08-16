@@ -39,7 +39,7 @@ export default function Articulo5() {
                         </p>
                         <p className=''>
                             Antes de considerar el uso de suplementos es necesario considerar que no todos están
-                            permitidos por la Agencia Mundial Andi Dopaje (WADA), así como que no todos los suplementos disponibles
+                            permitidos por la Agencia Mundial Antidopaje (WADA), así como que no todos los suplementos disponibles
                             en el mercado presentan efectos comprobados realmente.  En comparación con los suplementos que se ofrecen
                             en el mercado, la lista real de suplementos efectivos es más bien corta, estando compuesta por:
                         </p>

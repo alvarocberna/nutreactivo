@@ -55,7 +55,7 @@ export default function Articulo5() {
                         <p className=''>
                             Si cumplimos este principio es seguro que lograremos disminuir nuestra grasa corporal semana a
                             semana. Sin embargo, es importante considerar una pérdida progresiva, ya que restringir los
-                            alimentos de manera excesiva generará una perdida de peso demasiado abrupta, disminuyendo también
+                            alimentos de manera excesiva generará una pérdida de peso demasiado abrupta, disminuyendo también
                             nuestra masa muscular, y viéndose afectado nuestro sistema inmune y salud.
                         </p>
                     </div>
@@ -80,7 +80,7 @@ export default function Articulo5() {
                         </p>
                         <p className=''>
                             Por otro lado, los hidratos de carbono consumidos deben ser idealmente altos en fibra, como cereales
-                            integrales, legumbres, frutas y verduras, en lugar de alimentos procesados altos en azucares simples,
+                            integrales, legumbres, frutas y verduras, en lugar de alimentos procesados altos en azúcares simples,
                             como avena instantánea, pan blanco, azúcar, entre otros. Esto se debe a que los alimentos menos
                             procesados y más ricos en fibra generan un aumento más controlado en el aumento de la insulina. Por
                             otro lado, alimentos más procesados como avena, pan blanco, fideos, generan un aumento de la insulina

@@ -32,7 +32,7 @@ export default function Articulo2() {
                                 <p className=''>
                                     Principalmente, debemos considerar que los suplementos que adquirimos no siempre
                                     pueden ser lo que esperamos, ya que pueden estar mal etiquetados o contaminados con
-                                    sustancias ilícitas. En el mundo, pesar de que existen organismos que se encargan de
+                                    sustancias ilícitas. En el mundo, a pesar de que existen organismos que se encargan de
                                     regular estos aspectos, la realidad es que los suplementos dietéticos, a diferencia
                                     de medicamentos y drogas, tienen una regulación y control menos estricto para su
                                     comercialización, terminando por definirse según la regulación establecida de cada país.
@@ -56,7 +56,7 @@ export default function Articulo2() {
                             arrojar un doping positivo, dejando al deportista fuera de competencia.
                         </p>
                         <p className='bg-quaternary rounded text-primary p-4 '>
-                            Las sustancias prohibidas están definidas como tal debido a que representar
+                            Las sustancias prohibidas están definidas como tal debido a que representan
                             un riesgo para la salud, o violan el espíritu deportivo, el cual es definido por
                             la WADA como  la búsqueda por medios éticos de la excelencia humana a través del
                             perfeccionamiento del talento natural de cada deportista.
@@ -76,7 +76,7 @@ export default function Articulo2() {
                             <li>
                                 Hormonas peptídicas, factores de crecimiento, sustancias afines y miméticos
                                 (Eritropoyetinas, agentes que afectan la eritropoyesis, hormonas peptídicas y sus
-                                factores de liberación, factores de crecimiento y moouladores de factores de crecimiento).
+                                factores de liberación, factores de crecimiento y moduladores de factores de crecimiento).
                             </li>
                             <li>
                                 Agonistas Beta-2
@@ -130,18 +130,18 @@ export default function Articulo2() {
                         </h4>
                         <p className=''>
                             En nuestro país no se venden todos los suplementos que se comercializan en el
-                            exterior, debido a la los estándares establecidos por la reglamentación chilena
+                            exterior, debido a los estándares establecidos por la reglamentación chilena
                             que crean un filtro en el ingreso al país. En Chile es el ministerio de salud el
                             que determina los ingredientes permitidos en base al RSA. Mientras que son los SEREMIS
                             de salud los entes encargados en fiscalizar que se cumpla la normativa.
                         </p>
                         <p className='bg-quaternary rounded text-primary p-4 '>
-                            <b>RSA articulo 535:</b> Los ingredientes dietarios para suplementos alimentarios
+                            <b>RSA artículo 535:</b> Los ingredientes dietarios para suplementos alimentarios
                             deberán cumplir con la identidad y pureza indicada en las especificaciones
                             de calidad e inocuidad.
                         </p>
                         <p className='bg-quaternary rounded text-primary p-4 '>
-                            <b>RSA articulo 539:</b> En ellos no se podrá incorporar, solos ni en asociación,
+                            <b>RSA artículo 539:</b> En ellos no se podrá incorporar, solos ni en asociación,
                             hormonas o compuestos con efecto anabolizante. Tampoco se les podrá incorporar
                             sustancias con acción estimulante sobre el sistema nervioso, salvo aquellas que
                             estén expresamente autorizadas y dentro de los límites permitidos para este tipo
@@ -158,7 +158,7 @@ export default function Articulo2() {
                             <li>
                                 Buscar marcas y productos con experiencia y sellos de calidad nacional
                                 e internacional: Algunos sellos de calidad son “Informed-Sport”, “Informed-Choice”,
-                                “BSCG (Banned Subtances Control Group)” o “Cologne List”.
+                                “BSCG (Banned Substances Control Group)” o “Cologne List”.
                                 <div className='row d-flex justify-content-around my-3'>
                                     {/* <img className='col-3' src={Img1}></img> */}
                                     {/* <img className='col-3' src={Img2}></img> */}

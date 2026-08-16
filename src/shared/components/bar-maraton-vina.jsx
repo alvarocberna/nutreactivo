@@ -53,13 +53,13 @@ export default function BarMaratonVina() {
                                 Falta
                             </span>
                             {/* 2 - COUNTDOWN */}
-                            <CountdownUnit value={timeLeft.days} label='dias' />
+                            <CountdownUnit value={timeLeft.days} label='días' />
                             <CountdownUnit value={timeLeft.hours} label='horas' />
                             <CountdownUnit value={timeLeft.minutes} label='min' />
                             <CountdownUnit value={timeLeft.seconds} label='seg' />
                             {/* 3 - TEXTO 2 */}
                             <span className="maratonBarText" style={{ color: 'white', fontWeight: '700', textTransform: 'uppercase' }}>
-                                para la maraton de viña
+                                para la maratón de viña
                             </span>
                             {/* 4 - BUTTON */}
                             <Link
