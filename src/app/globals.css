@@ -216,6 +216,12 @@
     font-size: 26px;
     color: #673DE6;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.objIconWrap svg {
+    width: 26px;
+    height: 26px;
 }
 
 .footerLinkSty {
@@ -326,6 +332,21 @@
 
 .objCardSty:hover .objArrowSty {
     gap: 10px;
+}
+
+.objArrowIconBoxSty {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.objArrowIconBoxSty svg {
+    width: 100%;
+    height: 100%;
 }
 
 .btnAgendarSty {

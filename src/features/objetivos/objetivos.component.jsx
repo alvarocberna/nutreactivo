@@ -81,7 +81,10 @@ export function Objetivos() {
                       </p>
                     </div>
                     <span className="objArrowSty mt-auto">
-                      Explorar <FontAwesomeIcon icon={faArrowRight} style={{ fontSize: "0.75rem" }} />
+                      Explorar
+                      <span className="objArrowIconBoxSty">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </span>
                     </span>
                   </div>
                 </Link>
