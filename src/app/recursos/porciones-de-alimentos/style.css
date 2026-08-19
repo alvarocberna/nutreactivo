@@ -1,11 +1,201 @@
-.boxGru {
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    border-radius: 12px;
+.porcionesIntroSty {
+    max-width: 720px;
 }
 
-.boxGru:hover {
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+.grupoCardSty {
+    position: relative;
+    border-radius: 20px;
+    background: #fefefe;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 18px rgba(26, 26, 46, 0.06);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.grupoCardSty:hover {
+    box-shadow: 0 10px 28px rgba(26, 26, 46, 0.1);
+}
+
+.grupoCardSty.is-open {
+    box-shadow: 0 14px 34px rgba(26, 26, 46, 0.12);
+}
+
+.grupoCardBg--lavender {
+    --wash-a: #f2edfe;
+    --wash-b: #eae2fd;
+    --border-color: #d5c3fd;
+    --btn-bg: #795de8;
+    --chip-bg: #ece4fd;
+    --chip-color: #5b3fc4;
+}
+
+.grupoHeaderBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, var(--wash-a), var(--wash-b));
+    border: none;
     cursor: pointer;
+    text-align: left;
+}
+
+.grupoIconWrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(26, 26, 46, 0.08);
+}
+
+.grupoHeaderText {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.grupoTitleSty {
+    font-weight: 700;
+    color: #1a1a2e;
+    font-size: 1.05rem;
+}
+
+.grupoSubtitleSty {
+    font-size: 0.8rem;
+    color: #66667a;
+}
+
+.grupoChevronSty {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--btn-bg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.grupoCardSty.is-open .grupoChevronSty {
+    transform: rotate(180deg);
+}
+
+.grupoBodySty {
+    padding: 22px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.subgrupoTitleSty {
+    font-weight: 700;
+    color: var(--btn-bg);
+    margin-bottom: 10px;
+    font-size: 0.92rem;
+}
+
+.macroPillRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.macroPillSty {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    background: var(--chip-bg);
+    color: var(--chip-color);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.macroPillLabel {
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+.foodChipGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .foodChipGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .foodChipGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.foodChipSty {
+    background: #f7f7fb;
+    border: 1px solid #eceaf7;
+    color: #3c3c4a;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.foodChipSty:hover {
+    background: var(--chip-bg);
+    border-color: var(--border-color);
+}
+
+/* Bloque de recomendaciones / info */
+.infoBodySty h5 {
+    font-weight: 700;
+}
+
+.infoQuoteSty {
+    background: #f4f5ff;
+    color: #2F1C6A;
+    border-radius: 14px;
+    padding: 16px 20px;
+    border-left: 4px solid #673DE6;
+    font-size: 0.92rem;
+}
+
+.infoUtensilImg {
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(26, 26, 46, 0.1);
+    object-fit: contain;
+    background: #fff;
+}
+
+.infoPlateImg {
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(26, 26, 46, 0.12);
+    object-fit: cover;
+}
+
+.infoPlateList {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.88rem;
+    color: #3c3c4a;
 }

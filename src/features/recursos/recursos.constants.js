@@ -18,8 +18,8 @@ export const RecursosAyuda = [
     {
         title: "Proyecta el gasto de tu carrera",
         desc: "Proyecta el gasto energético, de macronutrientes y pérdida de liquido en los diferentes tramos de tu carrera.",
-        link: "/antropometria/calculo-de-indicadores/imc",
-        short: "IMC",
+        link: "/proyeccion-carrera",
+        short: "proyección",
         img: "/media/img-hombre-running.png",
         theme: "water",
     },
