@@ -4,12 +4,6 @@
     animation: flowGradient 14s ease infinite;
 }
 
-.navbarTopBarMaratonSty {
-    background: linear-gradient(90deg, #ee8f17, #e41141, #ee8f17);
-    background-size: 300% 100%;
-    animation: flowGradient 14s ease infinite;
-}
-
 .maratonBarSty {
     min-height: 30px;
     padding: 3px 12px;

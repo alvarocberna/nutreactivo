@@ -20,10 +20,10 @@ export default function Agendar() {
             <div className="agendarCard">
                 <div className="agendarCardAccent" />
                 <div className="agendarCardBody">
-                    <div className="agendarWaIcon">
+                    {/* <div className="agendarWaIcon">
                         <FontAwesomeIcon icon={faWhatsapp} />
                     </div>
-                    <h2 className="agendarCardTitle">¿Listo para comenzar?</h2>
+                    <h2 className="agendarCardTitle">¿Listo para comenzar?</h2> */}
                     <p className="agendarCardDesc">
                         Haz click en el botón para abrir WhatsApp y agendar tu consulta nutricional personalizada.
                     </p>

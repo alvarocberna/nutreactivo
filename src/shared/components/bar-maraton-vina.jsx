@@ -42,7 +42,7 @@ export default function BarMaratonVina() {
     }, []);
 
     return (
-        <div className='navbarTopBarMaratonSty maratonBarSty container-fluid w-100 d-flex justify-content-center'>
+        <div className='navbarTopBarSty maratonBarSty container-fluid w-100 d-flex justify-content-center'>
             <div className='row w-100'>
                 <div className='maratonBarContent col d-flex align-items-center justify-content-center flex-wrap'>
                     {timeLeft && (
@@ -66,8 +66,8 @@ export default function BarMaratonVina() {
                                 href='/proyeccion-carrera'
                                 className="maratonBarBtn"
                                 style={{
-                                    background: '#FFD100',
-                                    color: '#1a1a1a',
+                                    background: 'white',
+                                    color: '#673DE6',
                                     border: 'none',
                                     fontWeight: '700',
                                     display: 'flex',

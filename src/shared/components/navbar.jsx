@@ -2,12 +2,15 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Bar from './bar';
 import BarMaratonVina from './bar-maraton-vina';
 import "../../app/globals.css";
 
 export default function Navbar() {
     const navRef = useRef(null);
+    const pathname = usePathname();
+    const isHome = pathname === '/';
 
     useEffect(() => {
         const navEl = navRef.current;
@@ -27,7 +30,7 @@ export default function Navbar() {
         <nav ref={navRef} className="navbar navbar-expand-lg w-100 d-flex flex-column py-0 px-0"
             style={{ position: 'fixed', top: '0px', borderBottom: '1px solid #EFEFEF', zIndex: '1030'}}>
 
-            <BarMaratonVina/>
+            {isHome ? <BarMaratonVina/> : <Bar/>}
 
             <div className="container-fluid d-flex align-items-center px-0" style={{ background: 'white', height: '60px' }}>
                 {/* Logo  */}
