@@ -1,0 +1,160 @@
+.consultaHeaderSty {
+    max-width: 760px;
+}
+
+.consultaIntroRow {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 28px;
+}
+
+@media (min-width: 768px) {
+    .consultaIntroRow {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.consultaIntroVideo {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .consultaIntroVideo {
+        width: 42%;
+    }
+}
+
+.consultaVideoCardSty {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #d5c3fd;
+    box-shadow: 0 10px 30px rgba(103, 61, 230, 0.12);
+    background: #000;
+}
+
+.consultaVideoRatioSty {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.consultaVideoRatioSty iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.consultaIntroText {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.consultaIntroText h2 {
+    color: #2F1C6A;
+    font-weight: 700;
+}
+
+.consultaIntroText p {
+    color: #3c3c4a;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.consultaLinkSty {
+    align-self: flex-start;
+    font-size: 0.95rem;
+}
+
+.consultaPlanSty h2 {
+    color: #2F1C6A;
+    font-weight: 700;
+}
+
+.consultaPlanRow {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 28px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .consultaPlanRow {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.consultaPlanText {
+    flex: 1;
+    min-width: 0;
+    color: #3c3c4a;
+    line-height: 1.7;
+}
+
+.consultaPlanText p {
+    text-align: justify;
+}
+
+.consultaChecklistSty {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.consultaChecklistSty li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #3c3c4a;
+    line-height: 1.5;
+}
+
+.consultaChecklistIconSty {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #e5f6ee;
+    color: #048662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    margin-top: 2px;
+}
+
+.consultaPlanImgWrap {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .consultaPlanImgWrap {
+        width: 38%;
+    }
+}
+
+.consultaPlanImgSty {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(103, 61, 230, 0.14);
+    border: 1px solid #ece9fb;
+    background: #fefefe;
+}

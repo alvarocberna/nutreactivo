@@ -1,29 +1,256 @@
-.imgMedSty {
-    box-shadow: 0px 0px 8px #888888;
-    transition: 0.5s;
+.evalHeaderSty {
+    max-width: 760px;
 }
 
-.imgMedSty:hover {
-    box-shadow: 0px 0px 15px black;
-    transition: 0.5s;
-    cursor: pointer;
+.evalIntroRow {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 28px;
 }
 
-.indicadorSty {
+@media (min-width: 768px) {
+    .evalIntroRow {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.evalIntroVideo {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .evalIntroVideo {
+        width: 42%;
+    }
+}
+
+.evalVideoCardSty {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #d5c3fd;
+    box-shadow: 0 10px 30px rgba(103, 61, 230, 0.12);
+    background: #000;
+}
+
+.evalVideoRatioSty {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.evalVideoRatioSty iframe {
     position: absolute;
-    top: 0px;
-    transition: 0.5s;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
-.indicadorSty:hover {
-    opacity: 0;
-    transition: 0.5s;
+.evalIntroText {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
 }
 
-.msjBoxSty {
-    width: 75%;
-    font-size: 18px;
+.evalIntroText h2 {
+    color: #2F1C6A;
+    font-weight: 700;
+}
+
+.evalIntroText p {
+    color: #3c3c4a;
     text-align: justify;
-    background-color: #EBE4FF;
-    color: #673DE6;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.evalChecklistSty {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.evalChecklistSty li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #3c3c4a;
+    line-height: 1.5;
+}
+
+.evalChecklistIconSty {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #e5f6ee;
+    color: #048662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    margin-top: 2px;
+}
+
+.evalResultadosIntroSty {
+    max-width: 760px;
+}
+
+.evalResultadosIntroSty h2 {
+    color: #2F1C6A;
+    font-weight: 700;
+}
+
+.evalResultadosIntroSty p {
+    color: #3c3c4a;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.evalIndicadorGridSty {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 576px) {
+    .evalIndicadorGridSty {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .evalIndicadorGridSty {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.evalIndicadorCardSty {
+    background: #fefefe;
+    border: 1px solid #ece9fb;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(26, 26, 46, 0.06);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.evalIndicadorCardSty:hover {
+    box-shadow: 0 12px 30px rgba(103, 61, 230, 0.14);
+    transform: translateY(-4px);
+    border-color: #d5c3fd;
+}
+
+.evalFlipSceneSty {
+    width: 100%;
+    height: 280px;
+    perspective: 1400px;
+    margin-bottom: 16px;
+}
+
+.evalFlipCardSty {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.evalIndicadorCardSty.is-open .evalFlipCardSty {
+    transform: rotateY(180deg);
+}
+
+.evalFlipFaceSty {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.evalFlipFrontSty {
+    background: linear-gradient(135deg, #f2edfe, #eae2fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evalFlipBackSty {
+    background: linear-gradient(135deg, #673DE6, #8C85FF);
+    transform: rotateY(180deg);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.6) transparent;
+}
+
+.evalFlipBackSty::-webkit-scrollbar {
+    width: 6px;
+}
+
+.evalFlipBackSty::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 999px;
+}
+
+.evalIndicadorTitleSty {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 14px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.evalIndicadorToggleBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ece4fd;
+    color: #5b3fc4;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.evalIndicadorToggleBtn:hover {
+    background: #673DE6;
+    color: white;
+}
+
+.evalChevronSty {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.evalIndicadorCardSty.is-open .evalChevronSty {
+    transform: rotate(180deg);
+}
+
+.evalIndicadorDescSty {
+    margin: 0;
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 0.88rem;
 }
