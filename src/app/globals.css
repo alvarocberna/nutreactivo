@@ -11,8 +11,8 @@
 }
 
 .maratonBarSty {
-    min-height: 45px;
-    padding: 6px 12px;
+    min-height: 30px;
+    padding: 3px 12px;
 }
 
 .navbarSpacerSty {
@@ -20,103 +20,101 @@
 }
 
 .maratonBarContent {
-    column-gap: 18px;
-    row-gap: 8px;
+    column-gap: 14px;
+    row-gap: 4px;
 }
 
 .maratonBarText {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     gap: 5px;
 }
 
 .maratonCountdownUnit {
     background: rgba(0, 0, 0, 0.28);
-    border-radius: 7px;
-    padding: 3px 7px;
-    width: 38px;
-    line-height: 1.1;
+    border-radius: 6px;
+    padding: 1px 5px;
+    gap: 2px;
+    line-height: 1;
 }
 
 .maratonCountdownValue {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
 }
 
 .maratonCountdownLabel {
-    font-size: 0.5rem;
+    font-size: 0.62rem;
 }
 
 .maratonBarBtn {
-    padding: 4px 13px;
+    padding: 3px 12px;
     border-radius: 18px;
-    font-size: 0.77rem;
+    font-size: 0.68rem;
     gap: 5px;
 }
 
 @media only screen and (max-width: 768px) {
     .maratonBarSty {
-        padding: 8px 10px;
+        padding: 4px 10px;
     }
 
     .maratonBarContent {
-        column-gap: 10px;
-        row-gap: 6px;
+        column-gap: 8px;
+        row-gap: 4px;
     }
 
     .maratonBarText {
-        font-size: 0.78rem;
+        font-size: 0.68rem;
     }
 
     .maratonCountdownUnit {
-        width: 34px;
-        padding: 3px 6px;
+        padding: 1px 4px;
     }
 
     .maratonCountdownValue {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .maratonCountdownLabel {
-        font-size: 0.45rem;
+        font-size: 0.56rem;
     }
 
     .maratonBarBtn {
-        padding: 4px 11px;
-        font-size: 0.68rem;
+        padding: 3px 10px;
+        font-size: 0.6rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .maratonBarSty {
-        padding: 8px 8px;
+        padding: 4px 8px;
     }
 
     .maratonBarContent {
-        column-gap: 6px;
-        row-gap: 6px;
+        column-gap: 5px;
+        row-gap: 4px;
     }
 
     .maratonBarText {
-        font-size: 0.62rem;
+        font-size: 0.56rem;
         gap: 4px;
     }
 
     .maratonCountdownUnit {
-        width: 28px;
-        padding: 2px 4px;
-        border-radius: 6px;
+        padding: 1px 3px;
+        border-radius: 5px;
     }
 
     .maratonCountdownValue {
-        font-size: 0.68rem;
+        font-size: 0.6rem;
     }
 
     .maratonCountdownLabel {
-        font-size: 0.35rem;
+        font-size: 0.48rem;
     }
 
     .maratonBarBtn {
-        padding: 3px 9px;
-        font-size: 0.58rem;
+        padding: 2px 8px;
+        font-size: 0.5rem;
         gap: 4px;
     }
 }

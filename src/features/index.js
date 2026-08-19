@@ -7,3 +7,4 @@ export * from './valores/valores.component';
 export * from './objetivos/objetivos.component';
 export * from './covertura/covertura.component';
 export * from './maraton/maraton.component';
+export * from './recursos/recursos.component';

@@ -19,11 +19,11 @@ function getTimeRemaining() {
 
 function CountdownUnit({ value, label }) {
     return (
-        <div className="maratonCountdownUnit d-flex flex-column align-items-center justify-content-center">
+        <div className="maratonCountdownUnit d-flex flex-row align-items-baseline justify-content-center">
             <span className="maratonCountdownValue" style={{ color: 'white', fontWeight: '700' }}>
                 {value}
             </span>
-            <span className="maratonCountdownLabel" style={{ color: 'white', textTransform: 'uppercase', letterSpacing: '0.03em' }}>
+            <span className="maratonCountdownLabel" style={{ color: 'white', textTransform: 'uppercase' }}>
                 {label}
             </span>
         </div>
@@ -53,10 +53,10 @@ export default function BarMaratonVina() {
                                 Falta
                             </span>
                             {/* 2 - COUNTDOWN */}
-                            <CountdownUnit value={timeLeft.days} label='días' />
-                            <CountdownUnit value={timeLeft.hours} label='horas' />
-                            <CountdownUnit value={timeLeft.minutes} label='min' />
-                            <CountdownUnit value={timeLeft.seconds} label='seg' />
+                            <CountdownUnit value={timeLeft.days} label='d' />
+                            <CountdownUnit value={timeLeft.hours} label='h' />
+                            <CountdownUnit value={timeLeft.minutes} label='m' />
+                            <CountdownUnit value={timeLeft.seconds} label='s' />
                             {/* 3 - TEXTO 2 */}
                             <span className="maratonBarText" style={{ color: 'white', fontWeight: '700', textTransform: 'uppercase' }}>
                                 para la maratón de viña

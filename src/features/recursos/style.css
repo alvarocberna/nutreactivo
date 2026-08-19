@@ -1,0 +1,117 @@
+.recursoCardSty {
+    position: relative;
+    min-height: 240px;
+    background: #fefefe;
+    border-color: var(--border-color);
+}
+
+.recursoCardSty:hover {
+    border-color: var(--border-color);
+}
+
+.recursoCardBg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--wash-a), var(--wash-b));
+}
+
+.recursoBlob {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--blob-grad);
+}
+
+.recursoBlob:nth-child(1) {
+    width: 45%;
+    height: 110%;
+    top: -25%;
+    right: -12%;
+}
+
+.recursoBlob:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    bottom: -50%;
+    right: -10%;
+}
+
+
+.recursoCardBg--sage {
+    --wash-a: #effcf0;
+    --wash-b: #ddf7ec;
+    --blob-grad: linear-gradient(100deg, #cbf1e4 0%, #78c0b0 100%);
+    --border-color: #78c0b0;
+    --btn-bg: #048662;
+}
+
+.recursoCardBg--lavender {
+    --wash-a: #f2edfe;
+    --wash-b: #eae2fd;
+    --blob-grad: linear-gradient(100deg, #decffb 0%, #d5c3fd 100%);
+    --border-color: #d5c3fd;
+    --btn-bg: #795de8;
+}
+
+.recursoCardBg--powder-blue {
+    --wash-a: #e4effd;
+    --wash-b: #cce0fe;
+    --blob-grad: linear-gradient(100deg, #a9cefc 0%, #afd1fd 100%);
+    --border-color: #afd1fd;
+    --btn-bg: #2256c2;
+}
+
+.recursoCardBg--water {
+    --wash-a: #e6f7fd;
+    --wash-b: #cff0fa;
+    --blob-grad: linear-gradient(100deg, #b6e6f2 0%, #96d8e7 100%);
+    --border-color: #96d8e7;
+    --btn-bg: #0398a7;
+}
+
+.recursoCardBg--peach {
+    --wash-a: #fef1e6;
+    --wash-b: #fde4d3;
+    --blob-grad: linear-gradient(100deg, #fedcc1 0%, #fecfad 100%);
+    --border-color: #fecfad;
+    --btn-bg: #df5602
+}
+
+.recursoCardBg--coral {
+    --wash-a: #ffe8ea;
+    --wash-b: #fdd6db;
+    --blob-grad: linear-gradient(100deg, #fac7c9 0%, #f7cecc 100%);
+    --border-color: #f7cecc;
+    --btn-bg: #d94459;
+}
+
+.recursoCardImgLayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.recursoCardContent {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    height: 100%;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.recursoCardBtn {
+    background: var(--btn-bg);
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 12px;
+    align-self: flex-start;
+}
