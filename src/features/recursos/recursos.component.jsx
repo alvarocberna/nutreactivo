@@ -2,12 +2,9 @@
 import React from 'react'
 import '../../app/globals.css'
 import './style.css'
-import Link from 'next/link'
-import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-import { RecursosAyuda } from './recursos.constants'
+import { RecursosAyuda } from './recursos.data'
+import { RecursoCard } from './components/recurso-card'
 
 export function Recursos() {
     return (
@@ -22,38 +19,14 @@ export function Recursos() {
                 <div className='row g-4'>
                     {RecursosAyuda.map((rec) => (
                         <div key={rec.link} className='col-12 col-sm-6 col-lg-6'>
-                            <Link href={rec.link} className={`objCardSty recursoCardSty recursoCardBg--${rec.theme} h-100`}>
-
-                                <div className='recursoCardBg'>
-                                    <span className='recursoBlob'/>
-                                    <span className='recursoBlob'/>
-                                </div>
-
-                                <div className='recursoCardImgLayer'>
-                                    <Image
-                                        src={rec.img}
-                                        alt={rec.title}
-                                        fill
-                                        sizes='40vw'
-                                        style={{ objectFit: 'cover' }}
-                                    />
-                                </div>
-
-                                <div className='recursoCardContent'>
-                                    <h3 className='h6 fw-bold mb-2' style={{ color: '#1a1a2e', lineHeight: 1.3 }}>
-                                        {rec.title}
-                                    </h3>
-                                    <p className='text-muted small mb-0' style={{ lineHeight: 1.6 }}>
-                                        {rec.desc}
-                                    </p>
-                                    <span className='objArrowSty recursoCardBtn mt-auto'>
-                                        Ver {rec.short}
-                                        <span className='objArrowIconBoxSty'>
-                                            <FontAwesomeIcon icon={faArrowRight} />
-                                        </span>
-                                    </span>
-                                </div>
-                            </Link>
+                            <RecursoCard
+                                link={rec.link}
+                                theme={rec.theme}
+                                img={rec.img}
+                                title={rec.title}
+                                desc={rec.desc}
+                                short={rec.short}
+                            />
                         </div>
                     ))}
                 </div>

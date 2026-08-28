@@ -69,8 +69,8 @@ function getInitials(nombre) {
 function IterarComentarios({ numDeCaja, listaCom }) {
     const fin = numDeCaja * 3
     const inicio = fin - 3
-    const cards = listaCom.slice(inicio, fin).map((com, index) => (
-        <div key={index} className="col-11 col-md-4 mx-auto mb-3">
+    const cards = listaCom.slice(inicio, fin).map((com) => (
+        <div key={com.id} className="col-11 col-md-4 mx-auto mb-3">
             <div className="comentCardSty h-100 col-11 mx-auto">
                 <div className="objCardAccent" />
                 <div className="p-4 d-flex flex-column h-100">

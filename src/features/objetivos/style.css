@@ -1,0 +1,96 @@
+.objCardSty {
+    position: relative;
+    min-height: 260px;
+}
+
+.objCardBgSty {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--wash-a), var(--wash-b));
+}
+
+.objBlobSty {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--blob-grad);
+    width: 55%;
+    height: 55%;
+    bottom: -30%;
+    left: -20%;
+}
+
+.objIconWrap {
+    background: linear-gradient(135deg, var(--wash-b), var(--wash-a));
+    color: var(--btn-bg);
+}
+
+.objCardBg--peach {
+    --wash-a: #fef1e6;
+    --wash-b: #fde4d3;
+    --blob-grad: linear-gradient(100deg, #fedcc1 0%, #fecfad 100%);
+    --border-color: #fecfad;
+    --btn-bg: #df5602;
+    border-color: var(--border-color);
+}
+
+.objCardBg--lavender {
+    --wash-a: #f2edfe;
+    --wash-b: #eae2fd;
+    --blob-grad: linear-gradient(100deg, #decffb 0%, #d5c3fd 100%);
+    --border-color: #d5c3fd;
+    --btn-bg: #673de6;
+    border-color: var(--border-color);
+}
+
+.objCardBg--coral {
+    --wash-a: #ffe8ea;
+    --wash-b: #fdd6db;
+    --blob-grad: linear-gradient(100deg, #fac7c9 0%, #f7cecc 100%);
+    --border-color: #f7cecc;
+    --btn-bg: #d94459;
+    border-color: var(--border-color);
+}
+
+.objCardBg--water {
+    --wash-a: #e6f7fd;
+    --wash-b: #cff0fa;
+    --blob-grad: linear-gradient(100deg, #b6e6f2 0%, #96d8e7 100%);
+    --border-color: #96d8e7;
+    --btn-bg: #0398a7;
+    border-color: var(--border-color);
+}
+
+.objCardBg--sage {
+    --wash-a: #effcf0;
+    --wash-b: #ddf7ec;
+    --blob-grad: linear-gradient(100deg, #cbf1e4 0%, #78c0b0 100%);
+    --border-color: #78c0b0;
+    --btn-bg: #048662;
+    border-color: var(--border-color);
+}
+
+.objCardContentSty {
+    position: relative;
+    z-index: 1;
+}
+
+.objCardBtnSty {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 6px;
+    background: var(--btn-bg);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 10px 14px;
+    border-radius: 12px;
+    transition: gap 0.25s ease;
+}
+
+.objCardSty:hover .objCardBtnSty {
+    gap: 10px;
+}
