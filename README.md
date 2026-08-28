@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nutreactivo
 
-## Getting Started
+Sitio web de Nutreactivo — nutrición deportiva en Viña del Mar, Valparaíso y modalidad online. Construido con Next.js (App Router) y exportado como sitio estático.
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js compatible con Next.js 15
+- npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Comandos
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `npm run dev` — servidor de desarrollo (http://localhost:3000)
+- `npm run build` — build de producción; genera el export estático en `out/`
+- `npm run start` — sirve el build de producción (uso limitado, ver nota de despliegue abajo)
+- `npm run lint` — corre ESLint (`next lint`, config `next/core-web-vitals`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+No hay suite de tests configurada en este proyecto.
 
-## Learn More
+## Despliegue
 
-To learn more about Next.js, take a look at the following resources:
+El sitio se compila como **export estático** (`output: 'export'` en `next.config.mjs`), por lo que `npm run build` genera HTML/CSS/JS listos para servir desde cualquier hosting estático. No hay rutas de API, SSR ni Node.js en producción — basta con subir el contenido de `out/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/` — rutas (Next.js App Router). Solo unas pocas (la home, `/recursos`, `/proyeccion-carrera`) renderizan componentes de `src/features`; el resto son páginas autocontenidas con su propio contenido, `style.css` y a veces `datos.jsx`.
+- `src/features/` — la lógica y el contenido real de las secciones "hub" que sí pasan por el barrel `src/features/index.js`, organizadas por feature.
+- `src/shared/` — componentes transversales (navbar, footer, etc.) e imágenes compartidas.
+- `public/` — assets estáticos servidos directamente.
 
-## Deploy on Vercel
+Para el detalle de arquitectura y decisiones no evidentes a simple vista, ver [`CLAUDE.md`](./CLAUDE.md). Para el inventario completo de rutas y convenciones más específicas, ver la carpeta [`docs/`](./docs):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [`docs/rutas.md`](./docs/rutas.md) — inventario completo de rutas y de dónde sale el contenido de cada una.
+- [`docs/convenciones.md`](./docs/convenciones.md) — building blocks de artículos de "recurso", patrón de páginas autocontenidas, y la convención de imágenes duplicadas en detalle.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Documentación
+
+`CLAUDE.md`, este `README.md` y `docs/` se mantienen con el subagente `project-documenter` (`.claude/agents/project-documenter.md`), que se invoca tras cambios estructurales importantes (nuevas features/rutas, reorganización de carpetas, nuevas dependencias relevantes, cambios en build o despliegue) en vez de editarlos a mano.

@@ -34,6 +34,7 @@ export default function BarMaratonVina() {
     const [timeLeft, setTimeLeft] = useState(null);
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- valor inicial debe calcularse en cliente para evitar hydration mismatch (export estático: Date.now() en build-time no coincide con el del cliente)
         setTimeLeft(getTimeRemaining());
         const interval = setInterval(() => {
             setTimeLeft(getTimeRemaining());
