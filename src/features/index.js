@@ -8,3 +8,4 @@ export * from './objetivos/objetivos.component';
 export * from './covertura/covertura.component';
 export * from './maraton/maraton.component';
 export * from './recursos/recursos.component';
+export * from './online/online.component';
