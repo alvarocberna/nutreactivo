@@ -10,6 +10,7 @@ import {
     calcularZScoreMusloMedio,
     calcularZScorePantorrilla,
 } from '../formulas/phantom'
+import { interpretarImc, interpretarIcc } from './interpretacion-indices.service'
 
 export class EvaluacionFisicaService {
     crearEvaluacionFisica(valoresFormulario) {
@@ -23,14 +24,20 @@ export class EvaluacionFisicaService {
         const masaMuscularPorcentaje = Number(valoresFormulario.masaMuscular)
         const masaGrasaPorcentaje = Number(valoresFormulario.masaGrasa)
 
+        const edad = calcularEdad(valoresFormulario.fechaNacimiento)
+        const sexo = valoresFormulario.sexo
+
+        const valorImc = calcularImc(pesoEnKg, tallaEnCm)
+        const valorIcc = calcularIcc(circunferenciaCintura, circunferenciaCadera)
+
         // Pendiente: reglas de interpretación aún no definidas por el usuario.
-        const interpretacion = null
+        const interpretacionPendiente = null
 
         return {
             informacionPersonal: {
                 nombre: valoresFormulario.nombreCompleto,
-                edad: String(calcularEdad(valoresFormulario.fechaNacimiento)),
-                sexo: valoresFormulario.sexo,
+                edad: String(edad),
+                sexo,
             },
             mediciones: {
                 peso: pesoEnKg,
@@ -42,8 +49,8 @@ export class EvaluacionFisicaService {
                 circunferenciaPantorrilla,
             },
             indices: {
-                imc: { valor: calcularImc(pesoEnKg, tallaEnCm), interpretacion },
-                icc: { valor: calcularIcc(circunferenciaCintura, circunferenciaCadera), interpretacion },
+                imc: { valor: valorImc, interpretacion: interpretarImc(valorImc) },
+                icc: { valor: valorIcc, interpretacion: interpretarIcc(valorIcc, sexo, edad) },
             },
             phantom: {
                 phPeso: calcularZScorePeso(pesoEnKg, tallaEnCm),
@@ -55,8 +62,8 @@ export class EvaluacionFisicaService {
             },
             composicion: {
                 relativa: {
-                    masaMuscularPorcentaje: { valor: masaMuscularPorcentaje, interpretacion },
-                    masaGrasaPorcentaje: { valor: masaGrasaPorcentaje, interpretacion },
+                    masaMuscularPorcentaje: { valor: masaMuscularPorcentaje, interpretacion: interpretacionPendiente },
+                    masaGrasaPorcentaje: { valor: masaGrasaPorcentaje, interpretacion: interpretacionPendiente },
                 },
                 absoluta: {
                     masaMuscularKg: calcularKgMasaMuscular(masaMuscularPorcentaje, pesoEnKg),

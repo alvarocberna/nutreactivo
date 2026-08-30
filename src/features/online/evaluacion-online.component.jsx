@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { pdf } from '@react-pdf/renderer'
 import { PERSONAL_FIELDS, MEDICIONES_FIELDS, BIOIMPEDANCIA_FIELDS, STEPS } from './online.constants'
 import { PersonalInfoSection } from './components/personal-info-section'
 import { MedicionesSection } from './components/mediciones-section'
@@ -8,6 +9,7 @@ import { BioimpedanciaSection } from './components/bioimpedancia-section'
 import { InstructionsPanel } from './components/instructions-panel'
 import { InstructionsModalMobile } from './components/instructions-modal-mobile'
 import { EvaluacionFisicaService } from './services/evaluacion-fisica.service'
+import { InformePdf } from './pdf/informe-pdf.component'
 import './style.css'
 
 const evaluacionFisicaService = new EvaluacionFisicaService()
@@ -32,6 +34,11 @@ export function EvaluacionOnline() {
 
     const handleGenerarInforme = () => {
         setEvaluacionFisica(evaluacionFisicaService.crearEvaluacionFisica(values))
+    }
+
+    const handleVerInforme = async () => {
+        const blob = await pdf(<InformePdf evaluacionFisica={evaluacionFisica} />).toBlob()
+        window.open(URL.createObjectURL(blob))
     }
 
     const handleSelectStep = (stepId) => {
@@ -75,17 +82,17 @@ export function EvaluacionOnline() {
                         />
                     </div>
 
-                    <button type='button' className='btn btn-tertiary mt-4' onClick={handleGenerarInforme}>
-                        Generar informe
-                    </button>
+                    <div className='d-flex gap-2 mt-4'>
+                        <button type='button' className='btn btn-tertiary' onClick={handleGenerarInforme}>
+                            Generar informe
+                        </button>
 
-                    {evaluacionFisica && (
-                        <div className='mt-4 p-3 bg-light border rounded'>
-                            <pre className='mb-0' style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-                                {JSON.stringify(evaluacionFisica, null, 2)}
-                            </pre>
-                        </div>
-                    )}
+                        {evaluacionFisica && (
+                            <button type='button' className='btn btn-outline-tertiary' onClick={handleVerInforme}>
+                                Ver informe
+                            </button>
+                        )}
+                    </div>
                 </div>
             </div>
 
