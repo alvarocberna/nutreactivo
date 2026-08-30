@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons'
-import EvFisica from '../../antropometria/evaluacion-fisica/page.jsx';
+import EvFisica from '../antropometria/evaluacion-fisica/page.jsx';
 import { Valores } from '@/features';
 import './style.css';
 

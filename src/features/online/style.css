@@ -241,3 +241,235 @@
     cursor: pointer;
     z-index: 1;
 }
+
+/* Preview online (home) */
+.previewOnlineStepCardSty {
+    background: linear-gradient(150deg, #ffffff 55%, rgba(140, 133, 255, 0.06) 100%);
+    border: 1px solid rgba(140, 133, 255, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 6px 28px rgba(103, 61, 230, 0.1);
+    padding: 32px 28px;
+}
+
+.previewOnlineStepHeaderSty {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.previewOnlineStepBadgeSty {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(103, 61, 230, 0.18);
+    color: #2F1C6A;
+    font-weight: 800;
+    font-size: 1.26rem;
+}
+
+.previewOnlinePlanBadgeSty {
+    background: #f1f9f4;
+    color: #0db059;
+}
+
+.previewOnlineStepDescSty {
+    max-width: 640px;
+}
+
+.previewOnlineSubSectionSty {
+    background: #f8f7fd;
+    border-radius: 18px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.previewOnlineMedicionesRowSty {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.previewOnlineMedicionesColSty {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.previewOnlineVideoColSty {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.previewOnlineVideoSquareSty {
+    padding-top: 100%;
+}
+
+.previewOnlineMedicionesMoreSty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    color: #6b6b76;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.previewOnlineMedicionesMoreBadgeSty {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(103, 61, 230, 0.1);
+    border: 1px solid rgba(103, 61, 230, 0.3);
+    color: #673DE6;
+    font-weight: 700;
+    font-size: 0.78rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .previewOnlineMedicionesRowSty {
+        gap: 10px;
+    }
+}
+
+.previewOnlinePlanTitleSty {
+    color: #0db059;
+}
+
+.previewOnlinePlanRowSty {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.previewOnlinePlanColCardSty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 0;
+    background: #f1f9f4;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.previewOnlinePlanIconWrapSty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #f4faf0;
+    border: 1px solid rgba(13, 176, 89, 0.3);
+    color: #0db059;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.previewOnlinePurpleIconWrapSty {
+    background: rgba(103, 61, 230, 0.1);
+    border: 1px solid rgba(103, 61, 230, 0.3);
+    color: #673DE6;
+}
+
+.previewOnlinePlanSubSectionSty {
+    background: #f1f9f4;
+    border-radius: 18px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.previewOnlinePlanTagSty {
+    display: inline-flex;
+    align-items: center;
+    background: #f4faf0;
+    border: 1px solid rgba(13, 176, 89, 0.3);
+    color: #0db059;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 5px 14px;
+    border-radius: 999px;
+}
+
+.previewOnlineCtaCardSty {
+    background: #f8f7fd;
+    border: 1px solid rgba(103, 61, 230, 0.18);
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.previewOnlineCtaBtnSty {
+    border-radius: 10px;
+    padding: 10px 24px;
+    white-space: nowrap;
+}
+
+/* Step progress indicator (consulta-nutricional-online flow) */
+.stepProgressWrapSty {
+    margin-bottom: 32px;
+}
+
+.stepProgressEyebrowSty {
+    display: inline-block;
+    color: #673DE6;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.stepProgressSty {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stepProgressItemSty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stepProgressItemUpcomingSty {
+    opacity: 0.5;
+}
+
+.stepProgressBadgeSty {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(103, 61, 230, 0.18);
+    color: #2F1C6A;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.stepProgressBadgeStepTwoSty {
+    background: #f1f9f4;
+    color: #0db059;
+}
+
+.stepProgressLabelSty {
+    font-weight: 600;
+    color: #2F1C6A;
+}
+
+.stepProgressConnectorSty {
+    width: 32px;
+    height: 2px;
+    background: rgba(140, 133, 255, 0.3);
+    flex-shrink: 0;
+}
