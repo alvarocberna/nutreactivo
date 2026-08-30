@@ -7,7 +7,10 @@ import { MedicionesSection } from './components/mediciones-section'
 import { BioimpedanciaSection } from './components/bioimpedancia-section'
 import { InstructionsPanel } from './components/instructions-panel'
 import { InstructionsModalMobile } from './components/instructions-modal-mobile'
+import { EvaluacionFisicaService } from './services/evaluacion-fisica.service'
 import './style.css'
+
+const evaluacionFisicaService = new EvaluacionFisicaService()
 
 const INITIAL_VALUES = {
     ...Object.fromEntries(PERSONAL_FIELDS.map((f) => [f.key, f.defaultValue || ''])),
@@ -19,11 +22,16 @@ export function EvaluacionOnline() {
     const [values, setValues] = useState(INITIAL_VALUES)
     const [activeStepId, setActiveStepId] = useState(STEPS[0].id)
     const [isMobileModalOpen, setIsMobileModalOpen] = useState(false)
+    const [evaluacionFisica, setEvaluacionFisica] = useState(null)
 
     const activeStep = STEPS.find((s) => s.id === activeStepId) || STEPS[0]
 
     const handleChange = (key, value) => {
         setValues((prev) => ({ ...prev, [key]: value }))
+    }
+
+    const handleGenerarInforme = () => {
+        setEvaluacionFisica(evaluacionFisicaService.crearEvaluacionFisica(values))
     }
 
     const handleSelectStep = (stepId) => {
@@ -66,6 +74,18 @@ export function EvaluacionOnline() {
                             onSelectStep={handleSelectStep}
                         />
                     </div>
+
+                    <button type='button' className='btn btn-tertiary mt-4' onClick={handleGenerarInforme}>
+                        Generar informe
+                    </button>
+
+                    {evaluacionFisica && (
+                        <div className='mt-4 p-3 bg-light border rounded'>
+                            <pre className='mb-0' style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                                {JSON.stringify(evaluacionFisica, null, 2)}
+                            </pre>
+                        </div>
+                    )}
                 </div>
             </div>
 

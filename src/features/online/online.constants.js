@@ -25,7 +25,7 @@ export const MEDICIONES_FIELDS = [
 
 export const BIOIMPEDANCIA_FIELDS = [
     { key: 'masaGrasa', label: 'Masa grasa', unit: '%', placeholder: 'Ej: 18.5' },
-    { key: 'masaMuscular', label: 'Masa muscular', unit: 'kg', placeholder: 'Ej: 32' },
+    { key: 'masaMuscular', label: 'Masa muscular', unit: '%', placeholder: 'Ej: 45' },
 ]
 
 export const BIOIMPEDANCIA_ICON = faBolt
